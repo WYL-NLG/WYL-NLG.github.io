@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+<head><script src="/lab-website/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=lab-website/livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>汤傲成 | 实验室/课题组网站</title>
+
+      <link rel="stylesheet" href="/lab-website/css/main.css">
+
+
+      <script src="/lab-website/js/main.js"></script>
+
+
+</head>
+<body>
+  <header>
+    <div class="header-container">
+  <a href="http://localhost:1313/lab-website/" class="logo">
+    <div>
+      <div style="font-size: 1.2rem; font-weight: 700; color: var(--primary-color);">SHANGHAI AI-FINANCE SCHOOL, ECNU</div>
+      <div style="font-size: 0.9rem; font-weight: 600; color: var(--text-color);">华东师范大学上海人工智能金融学院</div>
+    </div>
+  </a>
+  
+  <button class="mobile-menu-btn" id="mobile-menu-btn">☰</button>
+  
+  <nav>
+    <ul class="nav-menu" id="nav-menu">
+      
+      <li><a href="http://localhost:1313/lab-website/">首页</a></li>
+      
+      <li><a href="http://localhost:1313/lab-website/about/">关于我们</a></li>
+      
+      <li><a href="http://localhost:1313/lab-website/team/">研究团队</a></li>
+      
+      <li><a href="http://localhost:1313/lab-website/research/">研究项目</a></li>
+      
+      <li><a href="http://localhost:1313/lab-website/publications/">出版物</a></li>
+      
+      <li><a href="http://localhost:1313/lab-website/news/">新闻动态</a></li>
+      
+      <li><a href="http://localhost:1313/lab-website/opportunities/">机会</a></li>
+      
+      <li><a href="http://localhost:1313/lab-website/contact/">联系方式</a></li>
+      
+    </ul>
+  </nav>
+</div>
+
+<script>
+  
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const navMenu = document.getElementById('nav-menu');
+  
+  mobileMenuBtn.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+  
+  
+  const navLinks = document.querySelectorAll('.nav-menu a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+    });
+  });
+</script>
+
+  </header>
+  <main>
+    
+  <div class="container">
+    <section class="section">
+      <h1 style="text-align: center; margin-top: 60px; border-bottom: 2px solid var(--accent-color); padding-bottom: 15px; margin-bottom: 40px;">汤傲成</h1>
+      <div style="max-width: 800px; margin: 0 auto; line-height: 1.8; font-size: 16px;">
+        <div style="display: flex; gap: 40px; align-items: flex-start;">
+  <div style="flex-shrink: 0; width: 200px; margin-left: -60px;">
+    <img src="http://localhost:1313/lab-website/images/tangaocheng.jpg" alt="汤傲成" style="width: 200px; height: 200px; border-radius: 8px; object-fit: cover;">
+  </div>
+  <div style="flex: 1; max-width: 900px; margin-left: 0;">
+    <h2 style="margin-top: 40px; margin-bottom: 20px; border-bottom: 1px solid var(--medium-gray); padding-bottom: 10px;" style="color: #2c7ad6; margin-bottom: 20px; font-size: 1.5rem;">简介</h2>
+<p>汤傲成教授是华东师范大学经济与管理学院助理教授，华东师范大学上海人工智能金融学院院长助理。汤教授于2022年8月获得英国剑桥大学博士学位，2023年6月进入华东师范大学担任助理教授，并于2024年入选上海市第十七批BYL计划青年项目。他的研究方向为新兴科技企业的知识产权策略以及人工智能与合成生物企业的产业化进程。他曾承担英国经济与社会科学研究院（ESRC）以及剑桥基金会（Cambridge Trust）联合项目，并获得IEEE 科技与工程管理协会年度大会最佳论文奖。</p>
+<h2 style="margin-top: 40px; margin-bottom: 20px; border-bottom: 1px solid var(--medium-gray); padding-bottom: 10px;" id="邮箱">邮箱</h2>
+<p><a href="mailto:actang@fem.ecnu.edu.cn">actang@fem.ecnu.edu.cn</a></p>
+<h2 style="margin-top: 40px; margin-bottom: 20px; border-bottom: 1px solid var(--medium-gray); padding-bottom: 10px;" id="个人主页">个人主页</h2>
+<p><a href="https://example.com/tangaozheng">个人主页链接</a></p>
+<h2 style="margin-top: 40px; margin-bottom: 20px; border-bottom: 1px solid var(--medium-gray); padding-bottom: 10px;" id="教育背景">教育背景</h2>
+<ul style="margin-top: 15px; margin-bottom: 25px; padding-left: 25px;">
+<li style="margin-bottom: 10px;">英国剑桥大学 知识产权策略学博士</li>
+<li style="margin-bottom: 10px;">英国剑桥大学 工业工程学硕士</li>
+<li style="margin-bottom: 10px;">英国帝国理工学院 工程学学士</li>
+</ul>
+<h2 style="margin-top: 40px; margin-bottom: 20px; border-bottom: 1px solid var(--medium-gray); padding-bottom: 10px;" id="研究兴趣">研究兴趣</h2>
+<ul style="margin-top: 15px; margin-bottom: 25px; padding-left: 25px;">
+<li style="margin-bottom: 10px;">知识产权管理</li>
+<li style="margin-bottom: 10px;">新兴科技产业化</li>
+<li style="margin-bottom: 10px;">高校产学研一体化</li>
+<li style="margin-bottom: 10px;">人工智能时代下的知识产权策略</li>
+</ul>
+<h2 style="margin-top: 40px; margin-bottom: 20px; border-bottom: 1px solid var(--medium-gray); padding-bottom: 10px;" id="近期发表">近期发表</h2>
+<ol>
+<li style="margin-bottom: 10px;">
+<p>Tang, A. and Tietze, F. (2021) ‘Intellectual Property Strategy Trajectory: A New Visualisation Approach’, in 2021 R&amp;D Management Conference.</p>
+</li>
+<li style="margin-bottom: 10px;">
+<p>Tang, A., Tietze, F. and Molloy, J. (2019) ‘Openness in Intellectual Property Strategies of Synthetic Biology Start-ups’, in 2019 IEEE Technology &amp; Engineering Management Conference (TEMSCON). IEEE, pp. 1–6.</p>
+</li>
+</ol>
+<h2 style="margin-top: 40px; margin-bottom: 20px; border-bottom: 1px solid var(--medium-gray); padding-bottom: 10px;" id="近期获奖">近期获奖</h2>
+<ul style="margin-top: 15px; margin-bottom: 25px; padding-left: 25px;">
+<li style="margin-bottom: 10px;">
+<p>2024年入选上海市第十七批BYL计划青年项目</p>
+</li>
+<li style="margin-bottom: 10px;">
+<p>2019年荣获IEEE TEMSCON IEEE技术与工程管理大会最佳论文奖</p>
+</div>
+</li>
+</ul>
+</div>
+      </div>
+    </section>
+  </div>
+
+  </main>
+  <footer>
+    <footer style="background: var(--gradient-primary); padding: 20px 0;">
+  
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px; text-align: center;">
+    <p style="margin: 0; font-size: 14px; font-weight: 600; color: #ffffff;">Copyright © 2026 华东师范大学人工智能金融学院. All rights reserved.</p>
+  </div>
+</footer>
+
+  </footer>
+</body>
+</html>

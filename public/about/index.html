@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+<head><script src="/lab-website/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=lab-website/livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>学院介绍 | 实验室/课题组网站</title>
+
+      <link rel="stylesheet" href="/lab-website/css/main.css">
+
+
+      <script src="/lab-website/js/main.js"></script>
+
+
+</head>
+<body>
+  <header>
+    <div class="header-container">
+  <a href="http://localhost:1313/lab-website/" class="logo">
+    <div>
+      <div style="font-size: 1.2rem; font-weight: 700; color: var(--primary-color);">SHANGHAI AI-FINANCE SCHOOL, ECNU</div>
+      <div style="font-size: 0.9rem; font-weight: 600; color: var(--text-color);">华东师范大学上海人工智能金融学院</div>
+    </div>
+  </a>
+  
+  <button class="mobile-menu-btn" id="mobile-menu-btn">☰</button>
+  
+  <nav>
+    <ul class="nav-menu" id="nav-menu">
+      
+      <li><a href="http://localhost:1313/lab-website/">首页</a></li>
+      
+      <li><a href="http://localhost:1313/lab-website/about/">关于我们</a></li>
+      
+      <li><a href="http://localhost:1313/lab-website/team/">研究团队</a></li>
+      
+      <li><a href="http://localhost:1313/lab-website/research/">研究项目</a></li>
+      
+      <li><a href="http://localhost:1313/lab-website/publications/">出版物</a></li>
+      
+      <li><a href="http://localhost:1313/lab-website/news/">新闻动态</a></li>
+      
+      <li><a href="http://localhost:1313/lab-website/opportunities/">机会</a></li>
+      
+      <li><a href="http://localhost:1313/lab-website/contact/">联系方式</a></li>
+      
+    </ul>
+  </nav>
+</div>
+
+<script>
+  
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const navMenu = document.getElementById('nav-menu');
+  
+  mobileMenuBtn.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+  
+  
+  const navLinks = document.querySelectorAll('.nav-menu a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+    });
+  });
+</script>
+
+  </header>
+  <main>
+    
+  <div class="container">
+    <section class="section">
+      
+        
+        
+        <div style="max-width: 800px; margin: 0 auto; line-height: 1.6; font-size: 16px;">
+          <h1 style="text-align: center !important; margin-top: 60px; border-bottom: 2px solid var(--accent-color); padding-bottom: 10px; margin-bottom: 30px; display: block; width: 100%;">学院介绍</h1>
+          <p>华东师范大学，简称"华东师大"，是中国著名的综合性研究型大学，位列国家"双一流"、"985"和"211"工程。华东师大成立于 1951年10月16日，是以大夏大学（1924 年）和光华大学（1925 年）为基础，在大夏大学原址上创办的。</p>
+          <p>科技的迅速发展，特别是人工智能（AI）的飞跃进步，作用于金融业对于更高效，更安全，更智能的解决方案的持续需求，便催生出了新生的人工智能金融（AI-Fin）。人工智能金融是一个高度复杂和多元化的领域，它需要多学科的合作和研究。AI-Fin 不同与 FinTech，也不同于 TechFin，AI 与金融的结合将以迅猛的速度前所未有的颠覆金融业的微观格局与世界政治经济格局。</p>
+          <p>上海人工智能金融学院（简称SAIFS）于2023年在华东师范大学成立，是全球首家围绕人工智能与金融跨界交叉打造的教育和研究机构。SAIFS强调在超越知识点的通识教育的基础上，培养集金融知识、人工智能技术和实践经验于一身的新一代人工智能金融（AI-Fin）领军型卓越人才，并坚持扎根在学术研究的前沿，探索AI在金融中的新应用，驱动AI-Fin的发展。同时，SAIFS致力于与全球的学术机构、金融机构、科技公司和政府部门建立广泛的合作网络，通过推广AI与金融的交叉研究和应用，改善金融服务的效率和质量，为社会创造价值。</p>
+          
+          
+          <h2 style="margin-top: 60px; border-bottom: 2px solid var(--accent-color); padding-bottom: 10px; margin-bottom: 30px; text-align: center;">愿景</h2>
+          
+          
+          <h2 id="research-center" style="margin-top: 60px; border-bottom: 2px solid var(--accent-color); padding-bottom: 10px; margin-bottom: 30px; text-align: center;">研究中心</h2>
+          
+          
+          <div style="background: var(--light-gray); padding: 30px; border-radius: var(--border-radius); margin-bottom: 30px; box-shadow: var(--shadow);">
+            <h3 style="margin-bottom: 20px; font-size: 1.3rem; color: var(--primary-color); text-align: center;">AI-Fin（人工智能金融）研究中心</h3>
+            <p style="margin-bottom: 20px;">AIFin结合了AI技术和金融学理论与实践，旨在利用AI技术（包括机器学习、深度学习、自然语言处理等）来改善和优化金融服务的质量和效率。AIFin不是FinTech的2.0升级，而是金融业的一次大换道，所有现在以及未来的金融从业者都需要重新培训和适配到AIFin的时代。开拓AIFin教育和研究的先行者将拥有未来新型金融卓越人才培养以及金融理论、技术和实践研究的广阔天地。</p>
+            <p style="margin-bottom: 20px;">学院将建设 AI-Fin（人工智能金融）研究中心，聚焦人工智能在金融领域的各项应用，研究怎样融合金融学的理论与人工智能的技术提升金融服务的效率并兼顾公平公正与伦理，未来将发布上海人工智能金融指数（Shanghai AI-Finance Index）和年度报告。</p>
+          </div>
+          
+          
+          <div style="background: var(--light-gray); padding: 30px; border-radius: var(--border-radius); margin-bottom: 30px; box-shadow: var(--shadow);">
+            <h3 style="margin-bottom: 20px; font-size: 1.3rem; color: var(--primary-color); text-align: center;">AI-PPE（人工智能伦理与治理）研究中心</h3>
+            <p style="margin-bottom: 20px;">AI-PPE（人工智能伦理与治理）研究中心将与华东师范大学经济与管理学院、马克思主义学院、政治与国际关系学院以及哲学系合作，共同研究AI 时代的全球哲学-政治学-经济学（PPE）思想前沿问题。</p>
+            <p style="margin-bottom: 20px;">研究方向包括但不限于：</p>
+            <ul style="margin-bottom: 20px; padding-left: 20px;">
+              <li style="margin-bottom: 10px;">数据隐私与安全：研究如何保护用户数据的隐私，防止数据泄露和滥用，以及建立安全可信的数据管理和共享机制。</li>
+              <li style="margin-bottom: 10px;">算法公正与透明：探讨如何确保人工智能算法的公正性和透明度，减少算法的偏见和歧视，提高算法决策的可解释性和可理解性。</li>
+              <li style="margin-bottom: 10px;">可信人工智能: 构建可信人工智能理论研究、测试基准、测试数据库、及开放平台，未来可输出给各大金融机构作为内控合规产品的核心部分。同时，也可以为政府机构提供可信人工智能的理论及研究支撑。</li>
+              <li style="margin-bottom: 10px;">社会公平与包容性：探讨人工智能技术对社会公平和包容性的影响，解决数字鸿沟和社会不平等问题，促进公平的人工智能发展。</li>
+              <li style="margin-bottom: 10px;">人机协作与人机关系：研究人类与人工智能系统之间的协作与关系，包括人机界面设计、人机交互方式、人工智能对人类工作和生活的影响等。</li>
+              <li style="margin-bottom: 10px;">国际合作与安全治理：探讨人工智能的国际合作与全球治理机制，制定国际性的人工智能安全和规范框架，防止人工智能技术的军事化和失控。</li>
+              <li style="margin-bottom: 10px;">伦理原则与法律规范：研究人工智能伦理原则和法律规范，建立符合人类价值观念的人工智能道德准则和法律框架，保障人工智能技术的合法和道德使用。</li>
+            </ul>
+            <p style="margin-bottom: 20px;">这些研究方向涵盖了人工智能伦理与治理领域的关键问题，为促进人工智能技术的可持续发展和社会进步提供了重要的理论和实践基础。</p>
+          </div>
+        </div>
+      
+    </section>
+  </div>
+
+  </main>
+  <footer>
+    <footer style="background: var(--gradient-primary); padding: 20px 0;">
+  
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px; text-align: center;">
+    <p style="margin: 0; font-size: 14px; font-weight: 600; color: #ffffff;">Copyright © 2026 华东师范大学人工智能金融学院. All rights reserved.</p>
+  </div>
+</footer>
+
+  </footer>
+</body>
+</html>

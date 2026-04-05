@@ -1,0 +1,762 @@
+{{ define "main" }}
+  <div class="container">
+    <section class="section">
+      {{ if eq .Section "team" }}
+        <!-- 团队页面：TrustAGI风格，按职位分类展示 -->
+        {{ $professors := where .Pages "Params.position" "in" (slice "教授" "兼职教授") }}
+        {{ $associateProfessors := where .Pages "Params.position" "副教授" }}
+        {{ $assistantProfessors := where .Pages "Params.position" "助理教授" }}
+        {{ $postdocs := where .Pages "Params.position" "博士后" }}
+        {{ $phds := where .Pages "Params.position" "博士研究生" }}
+        {{ $masters := where .Pages "Params.position" "硕士研究生" }}
+        {{ $undergrads := where .Pages "Params.position" "本科生" }}
+        {{ $researchAssistants := where .Pages "Params.position" "助理研究员" }}
+        {{ $alumni := where .Pages "Params.position" "已毕业" }}
+        
+        <!-- 教授 -->
+        {{ if $professors }}
+        <h2 class="section-title" style="margin-top: 60px; margin-bottom: 40px; text-align: center;">教授</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 60px; justify-items: center; justify-content: center;">
+          {{ range sort $professors "Params.weight" "asc" }}
+          <div style="text-align: center; transition: var(--transition); width: 100%; max-width: 200px;">
+            <div style="width: 160px; height: 160px; margin: 0 auto 20px; overflow: hidden; border-radius: 50%; box-shadow: var(--shadow);">
+              <!-- 使用最简单的路径引用图片 -->
+              {{ if eq .File.BaseFileName "shaoyilei" }}
+                <img src="{{ .Site.BaseURL }}images/shao-yilei.jpg.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else if eq .File.BaseFileName "tangaozheng" }}
+                <img src="{{ .Site.BaseURL }}images/tangaocheng.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else if eq .File.BaseFileName "wuzonghan" }}
+                <img src="{{ .Site.BaseURL }}images/wuzonghan.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else if eq .File.BaseFileName "wangjunlin" }}
+                <img src="{{ .Site.BaseURL }}images/wangjunlin.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else if eq .File.BaseFileName "wennanfu" }}
+                <img src="{{ .Site.BaseURL }}images/wennanfu.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else if eq .File.BaseFileName "wenqingsong" }}
+                <img src="{{ .Site.BaseURL }}images/wenqingsong.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else }}
+                <!-- 没有照片的成员显示默认占位符 -->
+                <div style="width: 100%; height: 100%; background-color: var(--medium-gray); display: flex; align-items: center; justify-content: center; color: var(--text-light); font-size: 0.8rem;">{{ .Title }}</div>
+              {{ end }}
+            </div>
+            <h3 style="margin-bottom: 8px; font-size: 1.1rem; font-weight: 600;"><a href="{{ .RelPermalink }}" style="color: var(--primary-color); text-decoration: none;">{{ .Title }}</a></h3>
+            <p style="margin: 0; color: var(--text-light); font-size: 0.9rem;">{{ .Params.position }}</p>
+          </div>
+          {{ end }}
+        </div>
+        {{ end }}
+        
+        <!-- 副教授 -->
+        {{ if $associateProfessors }}
+        <h2 class="section-title" style="margin-top: 60px; margin-bottom: 40px; text-align: center;">副教授</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 60px; justify-items: center; justify-content: center;">
+          {{ range $associateProfessors }}
+          <div style="text-align: center; transition: var(--transition); width: 100%; max-width: 200px;">
+            <div style="width: 160px; height: 160px; margin: 0 auto 20px; overflow: hidden; border-radius: 50%; box-shadow: var(--shadow);">
+              <!-- 使用最简单的路径引用图片 -->
+              {{ if eq .File.BaseFileName "shaoyilei" }}
+                <img src="{{ .Site.BaseURL }}images/shao-yilei.jpg.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else if eq .File.BaseFileName "tangaozheng" }}
+                <img src="{{ .Site.BaseURL }}images/tangaocheng.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else if eq .File.BaseFileName "wuzonghan" }}
+                <img src="{{ .Site.BaseURL }}images/wuzonghan.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else if eq .File.BaseFileName "wangjunlin" }}
+                <img src="{{ .Site.BaseURL }}images/wangjunlin.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else if eq .File.BaseFileName "wennanfu" }}
+                <img src="{{ .Site.BaseURL }}images/wennanfu.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else if eq .File.BaseFileName "wenqingsong" }}
+                <img src="{{ .Site.BaseURL }}images/wenqingsong.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else }}
+                <!-- 没有照片的成员显示默认占位符 -->
+                <div style="width: 100%; height: 100%; background-color: var(--medium-gray); display: flex; align-items: center; justify-content: center; color: var(--text-light); font-size: 0.8rem;">{{ .Title }}</div>
+              {{ end }}
+            </div>
+            <h3 style="margin-bottom: 8px; font-size: 1.1rem; font-weight: 600;"><a href="{{ .RelPermalink }}" style="color: var(--primary-color); text-decoration: none;">{{ .Title }}</a></h3>
+            <p style="margin: 0; color: var(--text-light); font-size: 0.9rem;">{{ .Params.position }}</p>
+          </div>
+          {{ end }}
+        </div>
+        {{ end }}
+        
+        <!-- 助理教授 -->
+        {{ if $assistantProfessors }}
+        <h2 class="section-title" style="margin-top: 60px; margin-bottom: 40px; text-align: center;">助理教授</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 60px; justify-items: center; justify-content: center;">
+          {{ range $assistantProfessors }}
+          <div style="text-align: center; transition: var(--transition); width: 100%; max-width: 200px;">
+            <div style="width: 160px; height: 160px; margin: 0 auto 20px; overflow: hidden; border-radius: 50%; box-shadow: var(--shadow);">
+              <!-- 使用最简单的路径引用图片 -->
+              {{ if eq .File.BaseFileName "shaoyilei" }}
+                <img src="{{ .Site.BaseURL }}images/shao-yilei.jpg.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else if eq .File.BaseFileName "tangaozheng" }}
+                <img src="{{ .Site.BaseURL }}images/tangaocheng.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else if eq .File.BaseFileName "wuzonghan" }}
+                <img src="{{ .Site.BaseURL }}images/wuzonghan.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else if eq .File.BaseFileName "wangjunlin" }}
+                <img src="{{ .Site.BaseURL }}images/wangjunlin.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else if eq .File.BaseFileName "wennanfu" }}
+                <img src="{{ .Site.BaseURL }}images/wennanfu.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else if eq .File.BaseFileName "wenqingsong" }}
+                <img src="{{ .Site.BaseURL }}images/wenqingsong.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else }}
+                <!-- 没有照片的成员显示默认占位符 -->
+                <div style="width: 100%; height: 100%; background-color: var(--medium-gray); display: flex; align-items: center; justify-content: center; color: var(--text-light); font-size: 0.8rem;">{{ .Title }}</div>
+              {{ end }}
+            </div>
+            <h3 style="margin-bottom: 8px; font-size: 1.1rem; font-weight: 600;"><a href="{{ .RelPermalink }}" style="color: var(--primary-color); text-decoration: none;">{{ .Title }}</a></h3>
+            <p style="margin: 0; color: var(--text-light); font-size: 0.9rem;">{{ .Params.position }}</p>
+          </div>
+          {{ end }}
+        </div>
+        {{ end }}
+        
+        <!-- 助理研究员 -->
+        {{ if $researchAssistants }}
+        <h2 class="section-title" style="margin-top: 60px; margin-bottom: 40px; text-align: center;">助理研究员</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 60px; justify-items: center; justify-content: center;">
+          {{ range $researchAssistants }}
+          <div style="text-align: center; transition: var(--transition); width: 100%; max-width: 200px;">
+            <div style="width: 160px; height: 160px; margin: 0 auto 20px; overflow: hidden; border-radius: 50%; box-shadow: var(--shadow);">
+              <!-- 使用最简单的路径引用图片 -->
+              {{ if eq .File.BaseFileName "shaoyilei" }}
+                <img src="{{ .Site.BaseURL }}images/shao-yilei.jpg.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else if eq .File.BaseFileName "tangaozheng" }}
+                <img src="{{ .Site.BaseURL }}images/tangaocheng.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else if eq .File.BaseFileName "wuzonghan" }}
+                <img src="{{ .Site.BaseURL }}images/wuzonghan.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else if eq .File.BaseFileName "wangjunlin" }}
+                <img src="{{ .Site.BaseURL }}images/wangjunlin.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else if eq .File.BaseFileName "wennanfu" }}
+                <img src="{{ .Site.BaseURL }}images/wennanfu.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else if eq .File.BaseFileName "wenqingsong" }}
+                <img src="{{ .Site.BaseURL }}images/wenqingsong.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else }}
+                <!-- 没有照片的成员显示默认占位符 -->
+                <div style="width: 100%; height: 100%; background-color: var(--medium-gray); display: flex; align-items: center; justify-content: center; color: var(--text-light); font-size: 0.8rem;">{{ .Title }}</div>
+              {{ end }}
+            </div>
+            <h3 style="margin-bottom: 8px; font-size: 1.1rem; font-weight: 600;"><a href="{{ .RelPermalink }}" style="color: var(--primary-color); text-decoration: none;">{{ .Title }}</a></h3>
+            <p style="margin: 0; color: var(--text-light); font-size: 0.9rem;">{{ .Params.position }}</p>
+          </div>
+          {{ end }}
+        </div>
+        {{ end }}
+        
+        <!-- 博士后 -->
+        {{ if $postdocs }}
+        <h2 class="section-title" style="margin-top: 60px; margin-bottom: 40px; text-align: center;">博士后</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 60px; justify-items: center; justify-content: center;">
+          {{ range $postdocs }}
+          <div style="text-align: center; transition: var(--transition); width: 100%; max-width: 200px;">
+            <div style="width: 160px; height: 160px; margin: 0 auto 20px; overflow: hidden; border-radius: 50%; box-shadow: var(--shadow);">
+              <!-- 使用最简单的路径引用图片 -->
+              {{ if eq .File.BaseFileName "shaoyilei" }}
+                <img src="{{ .Site.BaseURL }}images/shao-yilei.jpg.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else if eq .File.BaseFileName "tangaozheng" }}
+                <img src="{{ .Site.BaseURL }}images/tangaocheng.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else if eq .File.BaseFileName "wuzonghan" }}
+                <img src="{{ .Site.BaseURL }}images/wuzonghan.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else if eq .File.BaseFileName "wangjunlin" }}
+                <img src="{{ .Site.BaseURL }}images/wangjunlin.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else if eq .File.BaseFileName "wennanfu" }}
+                <img src="{{ .Site.BaseURL }}images/wennanfu.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else if eq .File.BaseFileName "wenqingsong" }}
+                <img src="{{ .Site.BaseURL }}images/wenqingsong.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else }}
+                <!-- 没有照片的成员显示默认占位符 -->
+                <div style="width: 100%; height: 100%; background-color: var(--medium-gray); display: flex; align-items: center; justify-content: center; color: var(--text-light); font-size: 0.8rem;">{{ .Title }}</div>
+              {{ end }}
+            </div>
+            <h3 style="margin-bottom: 8px; font-size: 1.1rem; font-weight: 600;"><a href="{{ .RelPermalink }}" style="color: var(--primary-color); text-decoration: none;">{{ .Title }}</a></h3>
+            <p style="margin: 0; color: var(--text-light); font-size: 0.9rem;">{{ .Params.position }}</p>
+          </div>
+          {{ end }}
+        </div>
+        {{ end }}
+        
+        <!-- 博士研究生 -->
+        {{ if $phds }}
+        <h2 class="section-title" style="margin-top: 60px; margin-bottom: 40px; text-align: center;">博士研究生</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 60px; justify-items: center; justify-content: center;">
+          {{ range sort $phds "Params.weight" "asc" }}
+          <div style="text-align: center; transition: var(--transition); width: 100%; max-width: 200px;">
+            <div style="width: 160px; height: 160px; margin: 0 auto 20px; overflow: hidden; border-radius: 50%; box-shadow: var(--shadow);">
+              <!-- 使用最简单的路径引用图片 -->
+              {{ if eq .File.BaseFileName "shaoyilei" }}
+                <img src="{{ .Site.BaseURL }}images/shao-yilei.jpg.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else if eq .File.BaseFileName "tangaozheng" }}
+                <img src="{{ .Site.BaseURL }}images/tangaocheng.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else if eq .File.BaseFileName "wuzonghan" }}
+                <img src="{{ .Site.BaseURL }}images/wuzonghan.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else if eq .File.BaseFileName "wangjunlin" }}
+                <img src="{{ .Site.BaseURL }}images/wangjunlin.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else if eq .File.BaseFileName "wennanfu" }}
+                <img src="{{ .Site.BaseURL }}images/wennanfu.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else if eq .File.BaseFileName "wenqingsong" }}
+                <img src="{{ .Site.BaseURL }}images/wenqingsong.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else }}
+                <!-- 没有照片的成员显示默认占位符 -->
+                <div style="width: 100%; height: 100%; background-color: var(--medium-gray); display: flex; align-items: center; justify-content: center; color: var(--text-light); font-size: 0.8rem;">{{ .Title }}</div>
+              {{ end }}
+            </div>
+            <h3 style="margin-bottom: 8px; font-size: 1.1rem; font-weight: 600;"><a href="{{ .RelPermalink }}" style="color: var(--primary-color); text-decoration: none;">{{ .Title }}</a></h3>
+            <p style="margin: 0; color: var(--text-light); font-size: 0.9rem;">{{ .Params.position }}</p>
+          </div>
+          {{ end }}
+        </div>
+        {{ end }}
+        
+        <!-- 硕士研究生 -->
+        {{ if $masters }}
+        <h2 class="section-title" style="margin-top: 60px; margin-bottom: 40px; text-align: center;">硕士研究生</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 60px; justify-items: center; justify-content: center;">
+          {{ range $masters }}
+          <div style="text-align: center; transition: var(--transition); width: 100%; max-width: 200px;">
+            <div style="width: 160px; height: 160px; margin: 0 auto 20px; overflow: hidden; border-radius: 50%; box-shadow: var(--shadow);">
+              <!-- 使用最简单的路径引用图片 -->
+              {{ if eq .File.BaseFileName "shaoyilei" }}
+                <img src="{{ .Site.BaseURL }}images/shao-yilei.jpg.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else if eq .File.BaseFileName "tangaozheng" }}
+                <img src="{{ .Site.BaseURL }}images/tangaocheng.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else if eq .File.BaseFileName "wuzonghan" }}
+                <img src="{{ .Site.BaseURL }}images/wuzonghan.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else if eq .File.BaseFileName "wangjunlin" }}
+                <img src="{{ .Site.BaseURL }}images/wangjunlin.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else if eq .File.BaseFileName "wennanfu" }}
+                <img src="{{ .Site.BaseURL }}images/wennanfu.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else if eq .File.BaseFileName "wenqingsong" }}
+                <img src="{{ .Site.BaseURL }}images/wenqingsong.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else }}
+                <!-- 没有照片的成员显示默认占位符 -->
+                <div style="width: 100%; height: 100%; background-color: var(--medium-gray); display: flex; align-items: center; justify-content: center; color: var(--text-light); font-size: 0.8rem;">{{ .Title }}</div>
+              {{ end }}
+            </div>
+            <h3 style="margin-bottom: 8px; font-size: 1.1rem; font-weight: 600;"><a href="{{ .RelPermalink }}" style="color: var(--primary-color); text-decoration: none;">{{ .Title }}</a></h3>
+            <p style="margin: 0; color: var(--text-light); font-size: 0.9rem;">{{ .Params.position }}</p>
+          </div>
+          {{ end }}
+        </div>
+        {{ end }}
+        
+        <!-- 本科生 -->
+        {{ if $undergrads }}
+        <h2 class="section-title" style="margin-top: 60px; margin-bottom: 40px; text-align: center;">本科生</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 60px; justify-items: center; justify-content: center;">
+          {{ range $undergrads }}
+          <div style="text-align: center; transition: var(--transition); width: 100%; max-width: 200px;">
+            <div style="width: 160px; height: 160px; margin: 0 auto 20px; overflow: hidden; border-radius: 50%; box-shadow: var(--shadow);">
+              <!-- 使用最简单的路径引用图片 -->
+              {{ if eq .File.BaseFileName "shaoyilei" }}
+                <img src="{{ .Site.BaseURL }}images/shao-yilei.jpg.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else if eq .File.BaseFileName "tangaozheng" }}
+                <img src="{{ .Site.BaseURL }}images/tangaocheng.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else if eq .File.BaseFileName "wuzonghan" }}
+                <img src="{{ .Site.BaseURL }}images/wuzonghan.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else if eq .File.BaseFileName "wangjunlin" }}
+                <img src="{{ .Site.BaseURL }}images/wangjunlin.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else if eq .File.BaseFileName "wennanfu" }}
+                <img src="{{ .Site.BaseURL }}images/wennanfu.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else if eq .File.BaseFileName "wenqingsong" }}
+                <img src="{{ .Site.BaseURL }}images/wenqingsong.jpg" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; z-index: 1; position: relative;">
+              {{ else }}
+                <!-- 没有照片的成员显示默认占位符 -->
+                <div style="width: 100%; height: 100%; background-color: var(--medium-gray); display: flex; align-items: center; justify-content: center; color: var(--text-light); font-size: 0.8rem;">{{ .Title }}</div>
+              {{ end }}
+            </div>
+            <h3 style="margin-bottom: 8px; font-size: 1.1rem; font-weight: 600;"><a href="{{ .RelPermalink }}" style="color: var(--primary-color); text-decoration: none;">{{ .Title }}</a></h3>
+            <p style="margin: 0; color: var(--text-light); font-size: 0.9rem;">{{ .Params.position }}</p>
+          </div>
+          {{ end }}
+        </div>
+        {{ end }}
+        
+        <!-- 已毕业 -->
+        {{ if $alumni }}
+        <h2 class="section-title" style="margin-top: 60px; margin-bottom: 40px; text-align: center;">已毕业</h2>
+        <div style="margin-top: 30px;">
+          <table style="width: 100%; border-collapse: collapse;">
+            <thead>
+              <tr style="background-color: var(--primary-color); color: white;">
+                <th style="padding: 12px; text-align: left;">姓名</th>
+                <th style="padding: 12px; text-align: left;">学位</th>
+                <th style="padding: 12px; text-align: left;">毕业年份</th>
+                <th style="padding: 12px; text-align: left;">当前职位</th>
+              </tr>
+            </thead>
+            <tbody>
+              {{ range sort $alumni "Params.graduationYear" "desc" }}
+              <tr style="border-bottom: 1px solid var(--medium-gray);">
+                <td style="padding: 12px;"><a href="{{ .RelPermalink }}" style="color: var(--primary-color);">{{ .LinkTitle }}</a></td>
+                <td style="padding: 12px;">{{ .Params.degree }}</td>
+                <td style="padding: 12px;">{{ .Params.graduationYear }}</td>
+                <td style="padding: 12px;">{{ .Params.currentPosition }}</td>
+              </tr>
+              {{ end }}
+            </tbody>
+          </table>
+        </div>
+        {{ end }}
+      {{ else if eq .Section "news" }}
+        <!-- 新闻动态页面：按年份分组，可筛选 -->
+        <div style="max-width: 1000px; margin: 0 auto;">
+          <h2 class="section-title" style="margin-top: 60px; margin-bottom: 40px; text-align: center;">新闻动态</h2>
+          
+          <!-- 筛选功能 -->
+          <div style="background: var(--light-gray); padding: 20px; border-radius: var(--border-radius); margin-bottom: 40px; box-shadow: var(--shadow);">
+            <h3 style="margin-bottom: 20px; font-size: 1.2rem; color: var(--primary-color);">筛选</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+              <div>
+                <label style="display: block; margin-bottom: 8px; font-weight: 500;">年份</label>
+                <select id="news-year-filter" style="width: 100%; padding: 8px; border: 1px solid var(--medium-gray); border-radius: var(--border-radius); background: var(--white);">
+                  <option value="all">全部</option>
+                  <option value="2026">2026</option>
+                  <option value="2025">2025</option>
+                  <option value="2024">2024</option>
+                </select>
+              </div>
+              <div>
+                <label style="display: block; margin-bottom: 8px; font-weight: 500;">关键词</label>
+                <input type="text" id="news-keyword-filter" placeholder="输入关键词" style="width: 100%; padding: 8px; border: 1px solid var(--medium-gray); border-radius: var(--border-radius); background: var(--white);">
+              </div>
+            </div>
+            <div style="margin-top: 20px; text-align: center;">
+              <button id="news-reset-filter" style="background: var(--primary-color); color: white; border: none; padding: 10px 20px; border-radius: var(--border-radius); cursor: pointer; font-weight: 500; transition: var(--transition);">
+                重置筛选
+              </button>
+            </div>
+          </div>
+          
+          <!-- 按年份分组的新闻 -->
+          <div class="news-container">
+            <!-- 2026年新闻 -->
+            <div class="news-year-section" data-year="2026">
+              <div class="news-year-header" style="display: flex; justify-content: space-between; align-items: center; background: #1e40af; color: white; padding: 15px 20px; border-radius: var(--border-radius); cursor: pointer; margin-bottom: 20px; transition: var(--transition); box-shadow: var(--shadow);">
+                <h3 style="margin: 0; font-size: 1.3rem; font-weight: 700; text-shadow: 0 1px 2px rgba(0,0,0,0.2);">2026</h3>
+                <span class="news-year-toggle" style="font-size: 1.5rem; transition: transform 0.3s ease; font-weight: 700;">+</span>
+              </div>
+              <div class="news-year-content" style="display: none; background: var(--light-gray); padding: 20px; border-radius: var(--border-radius); margin-bottom: 30px;">
+                {{ $year2026 := where .Pages "Date.Year" 2026 }}
+                {{ if $year2026 }}
+                  {{ range sort $year2026 "Date" "desc" }}
+                  <div class="news-item" data-keywords="{{ .Title | lower }}">
+                    <h4 style="margin-bottom: 10px; font-size: 1.1rem; color: var(--primary-color);"><a href="{{ .RelPermalink }}" style="color: var(--primary-color); text-decoration: none;">{{ .LinkTitle }}</a></h4>
+                    {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+                    {{ $dateHuman := .Date | time.Format "2006.01.02" }}
+                    <p style="margin-bottom: 15px; font-size: 0.95rem; color: var(--text-light);"><strong>日期:</strong> {{ $dateHuman }}</p>
+                    <hr style="margin: 15px 0; border: 1px solid var(--medium-gray);">
+                  </div>
+                  {{ end }}
+                {{ else }}
+                  <p style="text-align: center; color: var(--text-light); padding: 40px 0;">暂无新闻</p>
+                {{ end }}
+              </div>
+            </div>
+            
+            <!-- 2025年新闻 -->
+            <div class="news-year-section" data-year="2025">
+              <div class="news-year-header" style="display: flex; justify-content: space-between; align-items: center; background: #1e40af; color: white; padding: 15px 20px; border-radius: var(--border-radius); cursor: pointer; margin-bottom: 20px; transition: var(--transition); box-shadow: var(--shadow);">
+                <h3 style="margin: 0; font-size: 1.3rem; font-weight: 700; text-shadow: 0 1px 2px rgba(0,0,0,0.2);">2025</h3>
+                <span class="news-year-toggle" style="font-size: 1.5rem; transition: transform 0.3s ease; font-weight: 700;">+</span>
+              </div>
+              <div class="news-year-content" style="display: none; background: var(--light-gray); padding: 20px; border-radius: var(--border-radius); margin-bottom: 30px;">
+                {{ $year2025 := where .Pages "Date.Year" 2025 }}
+                {{ if $year2025 }}
+                  {{ range sort $year2025 "Date" "desc" }}
+                  <div class="news-item" data-keywords="{{ .Title | lower }}">
+                    <h4 style="margin-bottom: 10px; font-size: 1.1rem; color: var(--primary-color);"><a href="{{ .RelPermalink }}" style="color: var(--primary-color); text-decoration: none;">{{ .LinkTitle }}</a></h4>
+                    {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+                    {{ $dateHuman := .Date | time.Format "2006.01.02" }}
+                    <p style="margin-bottom: 15px; font-size: 0.95rem; color: var(--text-light);"><strong>日期:</strong> {{ $dateHuman }}</p>
+                    <hr style="margin: 15px 0; border: 1px solid var(--medium-gray);">
+                  </div>
+                  {{ end }}
+                {{ else }}
+                  <p style="text-align: center; color: var(--text-light); padding: 40px 0;">暂无新闻</p>
+                {{ end }}
+              </div>
+            </div>
+            
+            <!-- 2024年新闻 -->
+            <div class="news-year-section" data-year="2024">
+              <div class="news-year-header" style="display: flex; justify-content: space-between; align-items: center; background: #1e40af; color: white; padding: 15px 20px; border-radius: var(--border-radius); cursor: pointer; margin-bottom: 20px; transition: var(--transition); box-shadow: var(--shadow);">
+                <h3 style="margin: 0; font-size: 1.3rem; font-weight: 700; text-shadow: 0 1px 2px rgba(0,0,0,0.2);">2024</h3>
+                <span class="news-year-toggle" style="font-size: 1.5rem; transition: transform 0.3s ease; font-weight: 700;">+</span>
+              </div>
+              <div class="news-year-content" style="display: none; background: var(--light-gray); padding: 20px; border-radius: var(--border-radius); margin-bottom: 30px;">
+                {{ $year2024 := where .Pages "Date.Year" 2024 }}
+                {{ if $year2024 }}
+                  {{ range sort $year2024 "Date" "desc" }}
+                  <div class="news-item" data-keywords="{{ .Title | lower }}">
+                    <h4 style="margin-bottom: 10px; font-size: 1.1rem; color: var(--primary-color);"><a href="{{ .RelPermalink }}" style="color: var(--primary-color); text-decoration: none;">{{ .LinkTitle }}</a></h4>
+                    {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+                    {{ $dateHuman := .Date | time.Format "2006.01.02" }}
+                    <p style="margin-bottom: 15px; font-size: 0.95rem; color: var(--text-light);"><strong>日期:</strong> {{ $dateHuman }}</p>
+                    <hr style="margin: 15px 0; border: 1px solid var(--medium-gray);">
+                  </div>
+                  {{ end }}
+                {{ else }}
+                  <p style="text-align: center; color: var(--text-light); padding: 40px 0;">暂无新闻</p>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- JavaScript for filtering and toggling -->
+        <script>
+          // 年份切换功能
+          document.querySelectorAll('.news-year-header').forEach(header => {
+            header.addEventListener('click', function() {
+              const content = this.nextElementSibling;
+              const toggle = this.querySelector('.news-year-toggle');
+              
+              if (content.style.display === 'none' || content.style.display === '') {
+                content.style.display = 'block';
+                toggle.style.transform = 'rotate(45deg)';
+              } else {
+                content.style.display = 'none';
+                toggle.style.transform = 'rotate(0)';
+              }
+            });
+          });
+          
+          // 筛选功能
+          function filterNews() {
+            const yearFilter = document.getElementById('news-year-filter').value;
+            const keywordFilter = document.getElementById('news-keyword-filter').value.toLowerCase();
+            
+            document.querySelectorAll('.news-year-section').forEach(section => {
+              const year = section.dataset.year;
+              const items = section.querySelectorAll('.news-item');
+              let hasVisibleItems = false;
+              
+              items.forEach(item => {
+                const keywords = item.dataset.keywords;
+                
+                const yearMatch = yearFilter === 'all' || year === yearFilter;
+                const keywordMatch = keywordFilter === '' || keywords.includes(keywordFilter);
+                
+                if (yearMatch && keywordMatch) {
+                  item.style.display = 'block';
+                  hasVisibleItems = true;
+                } else {
+                  item.style.display = 'none';
+                }
+              });
+              
+              // 显示/隐藏年份 section
+              const header = section.querySelector('.news-year-header');
+              if (yearFilter === 'all' || year === yearFilter) {
+                header.style.display = 'flex';
+                const content = section.querySelector('.news-year-content');
+                if (hasVisibleItems) {
+                  content.style.display = 'block';
+                  section.querySelector('.news-year-toggle').style.transform = 'rotate(45deg)';
+                } else {
+                  content.style.display = 'none';
+                  section.querySelector('.news-year-toggle').style.transform = 'rotate(0)';
+                }
+              } else {
+                header.style.display = 'none';
+                section.querySelector('.news-year-content').style.display = 'none';
+              }
+            });
+          }
+          
+          // 重置筛选
+          document.getElementById('news-reset-filter').addEventListener('click', function() {
+            document.getElementById('news-year-filter').value = 'all';
+            document.getElementById('news-keyword-filter').value = '';
+            filterNews();
+          });
+          
+          // 绑定筛选事件
+          document.getElementById('news-year-filter').addEventListener('change', filterNews);
+          document.getElementById('news-keyword-filter').addEventListener('input', filterNews);
+          
+          // 初始加载时展开2026年
+          document.querySelector('.news-year-section[data-year="2026"] .news-year-header').click();
+        </script>
+      {{ else if eq .Section "research" }}
+        <!-- 研究项目页面：条目式 -->
+        <h2 class="section-title" style="margin-top: 60px; border-bottom: 2px solid var(--accent-color); padding-bottom: 10px;">研究项目</h2>
+        <div style="max-width: 800px; margin: 0 auto;">
+          {{ if .Pages }}
+            {{ range sort .Pages "Date" "desc" }}
+            <div style="border-bottom: 1px solid var(--medium-gray); padding: 20px 0; transition: var(--transition); display: flex; justify-content: space-between; align-items: center;">
+              <h3 style="margin: 0;"><a href="{{ .RelPermalink }}" style="color: var(--primary-color);">{{ .LinkTitle }}</a></h3>
+              {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+              {{ $dateHuman := .Date | time.Format "2006.01.02" }}
+              <time datetime="{{ $dateMachine }}" style="color: var(--secondary-color); font-weight: 500;">{{ $dateHuman }}</time>
+            </div>
+            {{ end }}
+          {{ end }}
+        </div>
+      {{ else if eq .Section "publications" }}
+        <!-- 出版物页面：TrustAGI风格，按年份分组，可筛选 -->
+        <div style="max-width: 1000px; margin: 0 auto;">
+          <h2 class="section-title" style="margin-top: 60px; margin-bottom: 40px; text-align: center;">出版物</h2>
+          
+          <!-- 筛选功能 -->
+          <div style="background: var(--light-gray); padding: 20px; border-radius: var(--border-radius); margin-bottom: 40px; box-shadow: var(--shadow);">
+            <h3 style="margin-bottom: 20px; font-size: 1.2rem; color: var(--primary-color);">筛选</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+              <div>
+                <label style="display: block; margin-bottom: 8px; font-weight: 500;">年份</label>
+                <select id="year-filter" style="width: 100%; padding: 8px; border: 1px solid var(--medium-gray); border-radius: var(--border-radius); background: var(--white);">
+                  <option value="all">全部</option>
+                  <option value="2026">2026</option>
+                  <option value="2025">2025</option>
+                  <option value="2024">2024</option>
+                </select>
+              </div>
+              <div>
+                <label style="display: block; margin-bottom: 8px; font-weight: 500;">作者</label>
+                <input type="text" id="author-filter" placeholder="输入作者姓名" style="width: 100%; padding: 8px; border: 1px solid var(--medium-gray); border-radius: var(--border-radius); background: var(--white);">
+              </div>
+              <div>
+                <label style="display: block; margin-bottom: 8px; font-weight: 500;">关键词</label>
+                <input type="text" id="keyword-filter" placeholder="输入关键词" style="width: 100%; padding: 8px; border: 1px solid var(--medium-gray); border-radius: var(--border-radius); background: var(--white);">
+              </div>
+              <div>
+                <label style="display: block; margin-bottom: 8px; font-weight: 500;">种类</label>
+                <select id="type-filter" style="width: 100%; padding: 8px; border: 1px solid var(--medium-gray); border-radius: var(--border-radius); background: var(--white);">
+                  <option value="all">全部</option>
+                  <option value="conference">会议论文</option>
+                  <option value="journal">期刊论文</option>
+                  <option value="preprint">预印本</option>
+                </select>
+              </div>
+            </div>
+            <div style="margin-top: 20px; text-align: center;">
+              <button id="reset-filter" style="background: var(--primary-color); color: white; border: none; padding: 10px 20px; border-radius: var(--border-radius); cursor: pointer; font-weight: 500; transition: var(--transition);">
+                重置筛选
+              </button>
+            </div>
+          </div>
+          
+          <!-- 按年份分组的出版物 -->
+          <div class="publications-container">
+            <!-- 2026年出版物 -->
+            <div class="year-section" data-year="2026">
+              <div class="year-header" style="display: flex; justify-content: space-between; align-items: center; background: #1e40af; color: white; padding: 15px 20px; border-radius: var(--border-radius); cursor: pointer; margin-bottom: 20px; transition: var(--transition); box-shadow: var(--shadow);">
+                <h3 style="margin: 0; font-size: 1.3rem; font-weight: 700; text-shadow: 0 1px 2px rgba(0,0,0,0.2);">2026</h3>
+                <span class="year-toggle" style="font-size: 1.5rem; transition: transform 0.3s ease; font-weight: 700;">+</span>
+              </div>
+              <div class="year-content" style="display: none; background: var(--light-gray); padding: 20px; border-radius: var(--border-radius); margin-bottom: 30px;">
+                <p style="text-align: center; color: var(--text-light); padding: 40px 0;">暂无出版物</p>
+              </div>
+            </div>
+            
+            <!-- 2025年出版物 -->
+            <div class="year-section" data-year="2025">
+              <div class="year-header" style="display: flex; justify-content: space-between; align-items: center; background: #1e40af; color: white; padding: 15px 20px; border-radius: var(--border-radius); cursor: pointer; margin-bottom: 20px; transition: var(--transition); box-shadow: var(--shadow);">
+                <h3 style="margin: 0; font-size: 1.3rem; font-weight: 700; text-shadow: 0 1px 2px rgba(0,0,0,0.2);">2025</h3>
+                <span class="year-toggle" style="font-size: 1.5rem; transition: transform 0.3s ease; font-weight: 700;">+</span>
+              </div>
+              <div class="year-content" style="display: none; background: var(--light-gray); padding: 20px; border-radius: var(--border-radius); margin-bottom: 30px;">
+                <p style="text-align: center; color: var(--text-light); padding: 40px 0;">暂无出版物</p>
+              </div>
+            </div>
+            
+            <!-- 2024年出版物 -->
+            <div class="year-section" data-year="2024">
+              <div class="year-header" style="display: flex; justify-content: space-between; align-items: center; background: #1e40af; color: white; padding: 15px 20px; border-radius: var(--border-radius); cursor: pointer; margin-bottom: 20px; transition: var(--transition); box-shadow: var(--shadow);">
+                <h3 style="margin: 0; font-size: 1.3rem; font-weight: 700; text-shadow: 0 1px 2px rgba(0,0,0,0.2);">2024</h3>
+                <span class="year-toggle" style="font-size: 1.5rem; transition: transform 0.3s ease; font-weight: 700;">+</span>
+              </div>
+              <div class="year-content" style="display: none; background: var(--light-gray); padding: 20px; border-radius: var(--border-radius); margin-bottom: 30px;">
+                <p style="text-align: center; color: var(--text-light); padding: 40px 0;">暂无出版物</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- JavaScript for filtering and toggling -->
+        <script>
+          // 年份切换功能
+          document.querySelectorAll('.year-header').forEach(header => {
+            header.addEventListener('click', function() {
+              const content = this.nextElementSibling;
+              const toggle = this.querySelector('.year-toggle');
+              
+              if (content.style.display === 'none' || content.style.display === '') {
+                content.style.display = 'block';
+                toggle.style.transform = 'rotate(45deg)';
+              } else {
+                content.style.display = 'none';
+                toggle.style.transform = 'rotate(0)';
+              }
+            });
+          });
+          
+          // 筛选功能
+          function filterPublications() {
+            const yearFilter = document.getElementById('year-filter').value;
+            
+            document.querySelectorAll('.year-section').forEach(section => {
+              const year = section.dataset.year;
+              const header = section.querySelector('.year-header');
+              
+              // 显示/隐藏年份 section
+              if (yearFilter === 'all' || year === yearFilter) {
+                header.style.display = 'flex';
+              } else {
+                header.style.display = 'none';
+                section.querySelector('.year-content').style.display = 'none';
+                section.querySelector('.year-toggle').style.transform = 'rotate(0)';
+              }
+            });
+          }
+          
+          // 重置筛选
+          document.getElementById('reset-filter').addEventListener('click', function() {
+            document.getElementById('year-filter').value = 'all';
+            document.getElementById('author-filter').value = '';
+            document.getElementById('keyword-filter').value = '';
+            document.getElementById('type-filter').value = 'all';
+            filterPublications();
+          });
+          
+          // 绑定筛选事件
+          document.getElementById('year-filter').addEventListener('change', filterPublications);
+          document.getElementById('author-filter').addEventListener('input', filterPublications);
+          document.getElementById('keyword-filter').addEventListener('input', filterPublications);
+          document.getElementById('type-filter').addEventListener('change', filterPublications);
+          
+          // 初始加载时展开2026年
+          document.querySelector('.year-section[data-year="2026"] .year-header').click();
+        </script>
+      {{ else if eq .Section "about" }}
+        <!-- 关于我们页面：只显示主页面内容 -->
+        <!-- 不显示子页面，因为内容已经在主页面中 -->
+        <div style="max-width: 800px; margin: 0 auto; line-height: 1.6; font-size: 16px;">
+          <h1 style="text-align: center !important; margin-top: 60px; border-bottom: 2px solid var(--accent-color); padding-bottom: 10px; margin-bottom: 30px; display: block; width: 100%;">学院介绍</h1>
+          <p>华东师范大学，简称"华东师大"，是中国著名的综合性研究型大学，位列国家"双一流"、"985"和"211"工程。华东师大成立于 1951年10月16日，是以大夏大学（1924 年）和光华大学（1925 年）为基础，在大夏大学原址上创办的。</p>
+          <p>科技的迅速发展，特别是人工智能（AI）的飞跃进步，作用于金融业对于更高效，更安全，更智能的解决方案的持续需求，便催生出了新生的人工智能金融（AI-Fin）。人工智能金融是一个高度复杂和多元化的领域，它需要多学科的合作和研究。AI-Fin 不同与 FinTech，也不同于 TechFin，AI 与金融的结合将以迅猛的速度前所未有的颠覆金融业的微观格局与世界政治经济格局。</p>
+          <p>上海人工智能金融学院（简称SAIFS）于2023年在华东师范大学成立，是全球首家围绕人工智能与金融跨界交叉打造的教育和研究机构。SAIFS强调在超越知识点的通识教育的基础上，培养集金融知识、人工智能技术和实践经验于一身的新一代人工智能金融（AI-Fin）领军型卓越人才，并坚持扎根在学术研究的前沿，探索AI在金融中的新应用，驱动AI-Fin的发展。同时，SAIFS致力于与全球的学术机构、金融机构、科技公司和政府部门建立广泛的合作网络，通过推广AI与金融的交叉研究和应用，改善金融服务的效率和质量，为社会创造价值。</p>
+          
+          <!-- 愿景部分 -->
+          <h2 style="margin-top: 60px; border-bottom: 2px solid var(--accent-color); padding-bottom: 10px; margin-bottom: 30px; text-align: center;">愿景</h2>
+          
+          <!-- 研究中心部分 -->
+          <h2 id="research-center" style="margin-top: 60px; border-bottom: 2px solid var(--accent-color); padding-bottom: 10px; margin-bottom: 30px; text-align: center;">研究中心</h2>
+          
+          <!-- 人工智能金融（AI-Fin）研究中心 -->
+          <div style="background: var(--light-gray); padding: 30px; border-radius: var(--border-radius); margin-bottom: 30px; box-shadow: var(--shadow);">
+            <h3 style="margin-bottom: 20px; font-size: 1.3rem; color: var(--primary-color); text-align: center;">AI-Fin（人工智能金融）研究中心</h3>
+            <p style="margin-bottom: 20px;">AIFin结合了AI技术和金融学理论与实践，旨在利用AI技术（包括机器学习、深度学习、自然语言处理等）来改善和优化金融服务的质量和效率。AIFin不是FinTech的2.0升级，而是金融业的一次大换道，所有现在以及未来的金融从业者都需要重新培训和适配到AIFin的时代。开拓AIFin教育和研究的先行者将拥有未来新型金融卓越人才培养以及金融理论、技术和实践研究的广阔天地。</p>
+            <p style="margin-bottom: 20px;">学院将建设 AI-Fin（人工智能金融）研究中心，聚焦人工智能在金融领域的各项应用，研究怎样融合金融学的理论与人工智能的技术提升金融服务的效率并兼顾公平公正与伦理，未来将发布上海人工智能金融指数（Shanghai AI-Finance Index）和年度报告。</p>
+          </div>
+          
+          <!-- 人工智能伦理与治理（AI-PPE）研究中心 -->
+          <div style="background: var(--light-gray); padding: 30px; border-radius: var(--border-radius); margin-bottom: 30px; box-shadow: var(--shadow);">
+            <h3 style="margin-bottom: 20px; font-size: 1.3rem; color: var(--primary-color); text-align: center;">AI-PPE（人工智能伦理与治理）研究中心</h3>
+            <p style="margin-bottom: 20px;">AI-PPE（人工智能伦理与治理）研究中心将与华东师范大学经济与管理学院、马克思主义学院、政治与国际关系学院以及哲学系合作，共同研究AI 时代的全球哲学-政治学-经济学（PPE）思想前沿问题。</p>
+            <p style="margin-bottom: 20px;">研究方向包括但不限于：</p>
+            <ul style="margin-bottom: 20px; padding-left: 20px;">
+              <li style="margin-bottom: 10px;">数据隐私与安全：研究如何保护用户数据的隐私，防止数据泄露和滥用，以及建立安全可信的数据管理和共享机制。</li>
+              <li style="margin-bottom: 10px;">算法公正与透明：探讨如何确保人工智能算法的公正性和透明度，减少算法的偏见和歧视，提高算法决策的可解释性和可理解性。</li>
+              <li style="margin-bottom: 10px;">可信人工智能: 构建可信人工智能理论研究、测试基准、测试数据库、及开放平台，未来可输出给各大金融机构作为内控合规产品的核心部分。同时，也可以为政府机构提供可信人工智能的理论及研究支撑。</li>
+              <li style="margin-bottom: 10px;">社会公平与包容性：探讨人工智能技术对社会公平和包容性的影响，解决数字鸿沟和社会不平等问题，促进公平的人工智能发展。</li>
+              <li style="margin-bottom: 10px;">人机协作与人机关系：研究人类与人工智能系统之间的协作与关系，包括人机界面设计、人机交互方式、人工智能对人类工作和生活的影响等。</li>
+              <li style="margin-bottom: 10px;">国际合作与安全治理：探讨人工智能的国际合作与全球治理机制，制定国际性的人工智能安全和规范框架，防止人工智能技术的军事化和失控。</li>
+              <li style="margin-bottom: 10px;">伦理原则与法律规范：研究人工智能伦理原则和法律规范，建立符合人类价值观念的人工智能道德准则和法律框架，保障人工智能技术的合法和道德使用。</li>
+            </ul>
+            <p style="margin-bottom: 20px;">这些研究方向涵盖了人工智能伦理与治理领域的关键问题，为促进人工智能技术的可持续发展和社会进步提供了重要的理论和实践基础。</p>
+          </div>
+        </div>
+      {{ else if eq .Section "research-center" }}
+        <!-- 研究中心页面：显示自己的内容 -->
+        <div style="max-width: 800px; margin: 0 auto; line-height: 1.6; font-size: 16px;">
+          <h1 style="text-align: center; margin-top: 60px; border-bottom: 2px solid var(--accent-color); padding-bottom: 10px; margin-bottom: 30px;">{{ .Title }}</h1>
+          {{ replaceRE "<h1.*?</h1>" "" .Content | replaceRE "&lt;p&gt;" "<p>" | replaceRE "&lt;/p&gt;" "</p>" | replaceRE "&lt;li&gt;" "<li>" | replaceRE "&lt;/li&gt;" "</li>" | safeHTML }}
+        </div>
+      {{ else if eq .Section "contact" }}
+        <!-- 联系方式页面：显示自己的内容 -->
+        <div style="max-width: 800px; margin: 0 auto; line-height: 1.6; font-size: 16px;">
+          <h1 style="text-align: center; margin-top: 60px; border-bottom: 2px solid var(--accent-color); padding-bottom: 10px; margin-bottom: 30px;">{{ .Title }}</h1>
+          {{ replaceRE "<h1.*?</h1>" "" .Content | replaceRE "&lt;p&gt;" "<p>" | replaceRE "&lt;/p&gt;" "</p>" | safeHTML }}
+        </div>
+      {{ else if eq .Section "opportunities" }}
+        <!-- 机会页面：TrustAGI风格 -->
+        <div style="max-width: 1000px; margin: 0 auto;">
+          <h2 class="section-title" style="margin-top: 60px; margin-bottom: 40px; text-align: center;">机会</h2>
+          
+          <!-- 博士后招聘 -->
+          <div class="opportunity-section" style="margin-bottom: 60px;">
+            <div class="opportunity-header" style="display: flex; justify-content: space-between; align-items: center; background: #1e40af; color: white; padding: 15px 20px; border-radius: var(--border-radius); margin-bottom: 20px; box-shadow: var(--shadow);">
+              <h3 style="margin: 0; font-size: 1.3rem; font-weight: 700; text-shadow: 0 1px 2px rgba(0,0,0,0.2);">博士后招聘</h3>
+            </div>
+            <div class="opportunity-content" style="background: var(--light-gray); padding: 30px; border-radius: var(--border-radius); box-shadow: var(--shadow);">
+              <p style="margin-bottom: 20px; font-size: 1.1rem;">我们诚邀优秀的博士后加入我们的研究团队，共同开展人工智能金融领域的前沿研究。</p>
+              
+              <h4 style="margin-bottom: 15px; font-size: 1.1rem; color: var(--primary-color);">要求：</h4>
+              
+              <h4 style="margin-bottom: 15px; font-size: 1.1rem; color: var(--primary-color);">待遇：</h4>
+            </div>
+          </div>
+          
+          <!-- 研究助理招聘 -->
+          <div class="opportunity-section" style="margin-bottom: 60px;">
+            <div class="opportunity-header" style="display: flex; justify-content: space-between; align-items: center; background: #1e40af; color: white; padding: 15px 20px; border-radius: var(--border-radius); margin-bottom: 20px; box-shadow: var(--shadow);">
+              <h3 style="margin: 0; font-size: 1.3rem; font-weight: 700; text-shadow: 0 1px 2px rgba(0,0,0,0.2);">研究助理招聘</h3>
+            </div>
+            <div class="opportunity-content" style="background: var(--light-gray); padding: 30px; border-radius: var(--border-radius); box-shadow: var(--shadow);">
+              <p style="margin-bottom: 20px; font-size: 1.1rem;">我们欢迎对人工智能金融领域感兴趣的研究助理加入我们的团队。</p>
+              
+              <h4 style="margin-bottom: 15px; font-size: 1.1rem; color: var(--primary-color);">要求：</h4>
+              
+              <h4 style="margin-bottom: 15px; font-size: 1.1rem; color: var(--primary-color);">待遇：</h4>
+            </div>
+          </div>
+          
+          <!-- 博士/硕士招生 -->
+          <div class="opportunity-section" style="margin-bottom: 60px;">
+            <div class="opportunity-header" style="display: flex; justify-content: space-between; align-items: center; background: #1e40af; color: white; padding: 15px 20px; border-radius: var(--border-radius); margin-bottom: 20px; box-shadow: var(--shadow);">
+              <h3 style="margin: 0; font-size: 1.3rem; font-weight: 700; text-shadow: 0 1px 2px rgba(0,0,0,0.2);">博士/硕士招生</h3>
+            </div>
+            <div class="opportunity-content" style="background: var(--light-gray); padding: 30px; border-radius: var(--border-radius); box-shadow: var(--shadow);">
+              <p style="margin-bottom: 20px; font-size: 1.1rem;">我们招收对人工智能金融领域感兴趣的博士和硕士研究生，提供良好的学术环境和研究条件。</p>
+              
+              <h4 style="margin-bottom: 15px; font-size: 1.1rem; color: var(--primary-color);">研究方向：</h4>
+              
+              <h4 style="margin-bottom: 15px; font-size: 1.1rem; color: var(--primary-color);">申请要求：</h4>
+            </div>
+          </div>
+          
+          <!-- 学术合作 -->
+          <div class="opportunity-section" style="margin-bottom: 60px;">
+            <div class="opportunity-header" style="display: flex; justify-content: space-between; align-items: center; background: #1e40af; color: white; padding: 15px 20px; border-radius: var(--border-radius); margin-bottom: 20px; box-shadow: var(--shadow);">
+              <h3 style="margin: 0; font-size: 1.3rem; font-weight: 700; text-shadow: 0 1px 2px rgba(0,0,0,0.2);">学术合作</h3>
+            </div>
+            <div class="opportunity-content" style="background: var(--light-gray); padding: 30px; border-radius: var(--border-radius); box-shadow: var(--shadow);">
+              <p style="margin-bottom: 20px; font-size: 1.1rem;">我们欢迎与国内外高校、研究机构开展学术合作，包括联合申请项目、共同发表论文、举办学术研讨会等。</p>
+              
+              <h4 style="margin-bottom: 15px; font-size: 1.1rem; color: var(--primary-color);">合作形式：</h4>
+            </div>
+          </div>
+          
+
+        </div>
+      {{ else }}
+        <!-- 其他页面：网格布局 -->
+        <div class="grid">
+          {{ if .Pages }}
+            {{ range sort .Pages "Date" "desc" }}
+            <div class="card">
+              <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
+              {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+              {{ $dateHuman := .Date | time.Format "2006-01-02" }}
+              <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+              {{ .Summary }}
+              <a href="{{ .RelPermalink }}" class="btn">阅读更多</a>
+            </div>
+            {{ end }}
+          {{ else }}
+            <p style="text-align: center; padding: 40px 0; color: var(--secondary-color);">暂无内容</p>
+          {{ end }}
+        </div>
+      {{ end }}
+    </section>
+  </div>
+{{ end }}

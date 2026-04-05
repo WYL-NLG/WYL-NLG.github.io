@@ -1,0 +1,36 @@
+<div class="header-container">
+  <a href="{{ .Site.BaseURL }}" class="logo">
+    <div>
+      <div style="font-size: 1.2rem; font-weight: 700; color: var(--primary-color);">SHANGHAI AI-FINANCE SCHOOL, ECNU</div>
+      <div style="font-size: 0.9rem; font-weight: 600; color: var(--text-color);">华东师范大学上海人工智能金融学院</div>
+    </div>
+  </a>
+  
+  <button class="mobile-menu-btn" id="mobile-menu-btn">☰</button>
+  
+  <nav>
+    <ul class="nav-menu" id="nav-menu">
+      {{ range .Site.Menus.main }}
+      <li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+      {{ end }}
+    </ul>
+  </nav>
+</div>
+
+<script>
+  // 移动端菜单切换
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const navMenu = document.getElementById('nav-menu');
+  
+  mobileMenuBtn.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+  
+  // 点击菜单项后关闭移动端菜单
+  const navLinks = document.querySelectorAll('.nav-menu a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+    });
+  });
+</script>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+<head><script src="/lab-website/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=lab-website/livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>文青松 | 实验室/课题组网站</title>
+
+      <link rel="stylesheet" href="/lab-website/css/main.css">
+
+
+      <script src="/lab-website/js/main.js"></script>
+
+
+</head>
+<body>
+  <header>
+    <div class="header-container">
+  <a href="http://localhost:1313/lab-website/" class="logo">
+    <div>
+      <div style="font-size: 1.2rem; font-weight: 700; color: var(--primary-color);">SHANGHAI AI-FINANCE SCHOOL, ECNU</div>
+      <div style="font-size: 0.9rem; font-weight: 600; color: var(--text-color);">华东师范大学上海人工智能金融学院</div>
+    </div>
+  </a>
+  
+  <button class="mobile-menu-btn" id="mobile-menu-btn">☰</button>
+  
+  <nav>
+    <ul class="nav-menu" id="nav-menu">
+      
+      <li><a href="http://localhost:1313/lab-website/">首页</a></li>
+      
+      <li><a href="http://localhost:1313/lab-website/about/">关于我们</a></li>
+      
+      <li><a href="http://localhost:1313/lab-website/team/">研究团队</a></li>
+      
+      <li><a href="http://localhost:1313/lab-website/research/">研究项目</a></li>
+      
+      <li><a href="http://localhost:1313/lab-website/publications/">出版物</a></li>
+      
+      <li><a href="http://localhost:1313/lab-website/news/">新闻动态</a></li>
+      
+      <li><a href="http://localhost:1313/lab-website/opportunities/">机会</a></li>
+      
+      <li><a href="http://localhost:1313/lab-website/contact/">联系方式</a></li>
+      
+    </ul>
+  </nav>
+</div>
+
+<script>
+  
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const navMenu = document.getElementById('nav-menu');
+  
+  mobileMenuBtn.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+  
+  
+  const navLinks = document.querySelectorAll('.nav-menu a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+    });
+  });
+</script>
+
+  </header>
+  <main>
+    
+  <div class="container">
+    <section class="section">
+      <h1 style="text-align: center; margin-top: 60px; border-bottom: 2px solid var(--accent-color); padding-bottom: 15px; margin-bottom: 40px;">文青松</h1>
+      <div style="max-width: 800px; margin: 0 auto; line-height: 1.8; font-size: 16px;">
+        <div style="display: flex; gap: 40px; align-items: flex-start;">
+  <div style="flex-shrink: 0; width: 200px; margin-left: -60px;">
+    <img src="http://localhost:1313/lab-website/images/wenqingsong.jpg" alt="文青松" style="width: 200px; height: 200px; border-radius: 8px; object-fit: cover;">
+  </div>
+  <div style="flex: 1; max-width: 900px; margin-left: 0;">
+    <h2 style="margin-top: 40px; margin-bottom: 20px; border-bottom: 1px solid var(--medium-gray); padding-bottom: 10px;" style="color: #2c7ad6; margin-bottom: 20px; font-size: 1.5rem;">个人简介</h2>
+<p>文青松,华东师范大学上海人工智能金融学院兼职教授，松鼠AI首席科学家与AI研究院院长，牛津大学博士生导师。他曾在Alibaba、Qualcomm、Marvell等全球顶尖科技企业担任重要技术研发领袖，在Georgia Institute of Technology（佐治亚理工学院）获得电子与计算机工程硕士与博士学位。他的研究兴趣涵盖机器学习、数据挖掘和信号处理，特别专注于时间序列人工智能，教育人工智能，大语言模型与智能体等方向。他在国际顶级AI会议和期刊上共发表了150余篇论文，包括多篇在NeurIPS, ICML, ICLR, ACL, AAAI上的Oral或Spotlight论文，多篇在IJCAI获最具影响力论文，并多次荣获AAAI创新应用奖。他目前担任IEEE时间序列与时空数据人工智能工作组主席，INNS人工智能教育专委会副主席，并长期担任NeurIPS、ICML、ICLR、KDD、IJCAI、ICASSP等顶会的领域主席，以及担任IEEE Transactions on Pattern Analysis and MachineIntelligence（影响因子20.8）、IEEE Signal Processing Letters和Neurocomputing等顶刊的副编辑，并入选福布斯中国最具影响力华人精英TOP 100。</p>
+<h2 style="margin-top: 40px; margin-bottom: 20px; border-bottom: 1px solid var(--medium-gray); padding-bottom: 10px;" id="教育背景">教育背景</h2>
+<p>Georgia Institute of Technology (佐治亚理工学院)电子与计算机工程博士</p>
+<h2 style="margin-top: 40px; margin-bottom: 20px; border-bottom: 1px solid var(--medium-gray); padding-bottom: 10px;" id="近期学术发表">近期学术发表</h2>
+<p>[1] Yaxuan Kong, Yiyuan Yang, Yoontae Hwang, Wenjie Du, Stefan Zohren, Zhangyang Wang, Ming Jin, Qingsong Wen, &ldquo;Time-MQA: Time Series Multi-Task Question Answering with Context Enhancement,&rdquo; ACL 2025. (ACL Main)</p>
+<p>[2] Tianlong Xu, YiFan Zhang, Zhendong Chu, Shen Wang, Qingsong Wen, &ldquo;AI-Driven Virtual Teacher for Enhanced Educational Efficiency: Leveraging Large Pretrain Models for Autonomous Error Analysis and Correction,&rdquo; AAAI 2025. (AAAI/IAAI 2025 Innovative Application Award)</p>
+<p>[3] Miao Yu, Fanci Meng, Xinyun Zhou, Shilong Wang, Junyuan Mao, Linsey Pang, Tianlong Chen, Kun Wang, Xinfeng Li, Yongfeng Zhang, Bo An, Qingsong Wen, &ldquo;A Survey on Trustworthy LLM Agents: Threats and Countermeasures,&rdquo; KDD 2025.</p>
+<p>[4] Jiaxi Hu, Yongqi Pan, Jusen Du, Disen Lan, Xiaqiang Tang, Qingsong Wen, Yuxuan Liang, Weigao Sun, &ldquo;Improving Nonlinear RNN with Closed-loop Control,&rdquo; NeurIPS 2025. (NeurIPS Spotlight, Top 3.5%)</p>
+<p>[5] Xiaoming Shi, Shiyu Wang, Yuqi Nie, Dianqi Li, Zhou Ye, Qingsong Wen, Ming Jin, &ldquo;Time-MoE: Billion-Scale Time Series Foundation Models with Mixture of Experts,&rdquo; (ICLR Spotlight, Top 5%)</p>
+<p>[6] Shikai Fang, Qingsong Wen, Yingtao Luo, Shandian Zhe, Liang Sun, &ldquo;BayOTIDE: Bayesian Online Multivariate Time Series Imputation with Functional Decomposition,&rdquo; ICML 2024. (ICML Spotlight, Top 3.5%)</p>
+<p>[7] Qingsong Wen, Tian Zhou, Chaoli Zhang, Weiqi Chen, Ziqing Ma, Junchi Yan, Liang Sun, &ldquo;Transformers in Time Series: A Survey&rdquo;, IJCAI 2023. (Most Influential IJCAI'23 Paper)</p>
+<h2 style="margin-top: 40px; margin-bottom: 20px; border-bottom: 1px solid var(--medium-gray); padding-bottom: 10px;" id="近期获奖情况">近期获奖情况</h2>
+<p>2025福布斯中国全球最具影响力华人精英Top 100
+2025AAAI创新应用奖</p>
+  </div>
+</div>
+
+      </div>
+    </section>
+  </div>
+
+  </main>
+  <footer>
+    <footer style="background: var(--gradient-primary); padding: 20px 0;">
+  
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px; text-align: center;">
+    <p style="margin: 0; font-size: 14px; font-weight: 600; color: #ffffff;">Copyright © 2026 华东师范大学人工智能金融学院. All rights reserved.</p>
+  </div>
+</footer>
+
+  </footer>
+</body>
+</html>

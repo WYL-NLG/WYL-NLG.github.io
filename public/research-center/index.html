@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+<head><script src="/lab-website/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=lab-website/livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>研究中心 | 实验室/课题组网站</title>
+
+      <link rel="stylesheet" href="/lab-website/css/main.css">
+
+
+      <script src="/lab-website/js/main.js"></script>
+
+
+</head>
+<body>
+  <header>
+    <div class="header-container">
+  <a href="http://localhost:1313/lab-website/" class="logo">
+    <div>
+      <div style="font-size: 1.2rem; font-weight: 700; color: var(--primary-color);">SHANGHAI AI-FINANCE SCHOOL, ECNU</div>
+      <div style="font-size: 0.9rem; font-weight: 600; color: var(--text-color);">华东师范大学上海人工智能金融学院</div>
+    </div>
+  </a>
+  
+  <button class="mobile-menu-btn" id="mobile-menu-btn">☰</button>
+  
+  <nav>
+    <ul class="nav-menu" id="nav-menu">
+      
+      <li><a href="http://localhost:1313/lab-website/">首页</a></li>
+      
+      <li><a href="http://localhost:1313/lab-website/about/">关于我们</a></li>
+      
+      <li><a href="http://localhost:1313/lab-website/team/">研究团队</a></li>
+      
+      <li><a href="http://localhost:1313/lab-website/research/">研究项目</a></li>
+      
+      <li><a href="http://localhost:1313/lab-website/publications/">出版物</a></li>
+      
+      <li><a href="http://localhost:1313/lab-website/news/">新闻动态</a></li>
+      
+      <li><a href="http://localhost:1313/lab-website/opportunities/">机会</a></li>
+      
+      <li><a href="http://localhost:1313/lab-website/contact/">联系方式</a></li>
+      
+    </ul>
+  </nav>
+</div>
+
+<script>
+  
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const navMenu = document.getElementById('nav-menu');
+  
+  mobileMenuBtn.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+  
+  
+  const navLinks = document.querySelectorAll('.nav-menu a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+    });
+  });
+</script>
+
+  </header>
+  <main>
+    
+  <div class="container">
+    <section class="section">
+      
+        
+        <div style="max-width: 800px; margin: 0 auto; line-height: 1.6; font-size: 16px;">
+          <h1 style="text-align: center; margin-top: 60px; border-bottom: 2px solid var(--accent-color); padding-bottom: 10px; margin-bottom: 30px;">研究中心</h1>
+          
+<p>上海人工智能金融学院拥有两个研究中心，致力于人工智能在金融领域的应用研究以及人工智能伦理与治理研究。</p>
+
+        </div>
+      
+    </section>
+  </div>
+
+  </main>
+  <footer>
+    <footer style="background: var(--gradient-primary); padding: 20px 0;">
+  
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px; text-align: center;">
+    <p style="margin: 0; font-size: 14px; font-weight: 600; color: #ffffff;">Copyright © 2026 华东师范大学人工智能金融学院. All rights reserved.</p>
+  </div>
+</footer>
+
+  </footer>
+</body>
+</html>

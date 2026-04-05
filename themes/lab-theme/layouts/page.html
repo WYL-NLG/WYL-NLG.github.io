@@ -1,0 +1,10 @@
+{{ define "main" }}
+  <div class="container">
+    <section class="section">
+      <h1 style="text-align: center; margin-top: 60px; border-bottom: 2px solid var(--accent-color); padding-bottom: 15px; margin-bottom: 40px;">{{ .Title }}</h1>
+      <div style="max-width: 800px; margin: 0 auto; line-height: 1.8; font-size: 16px;">
+        {{ .Content | replaceRE "<h2" "<h2 style=\"margin-top: 40px; margin-bottom: 20px; border-bottom: 1px solid var(--medium-gray); padding-bottom: 10px;\"" | replaceRE "<h3" "<h3 style=\"margin-top: 30px; margin-bottom: 15px;\"" | replaceRE "<ul" "<ul style=\"margin-top: 15px; margin-bottom: 25px; padding-left: 25px;\"" | replaceRE "<li" "<li style=\"margin-bottom: 10px;\"" | replaceRE "src=\"/images/" (print "src=\"" .Site.BaseURL "images/") | safeHTML }}
+      </div>
+    </section>
+  </div>
+{{ end }}

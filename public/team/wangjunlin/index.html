@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+<head><script src="/lab-website/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=lab-website/livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>汪俊霖 | 实验室/课题组网站</title>
+
+      <link rel="stylesheet" href="/lab-website/css/main.css">
+
+
+      <script src="/lab-website/js/main.js"></script>
+
+
+</head>
+<body>
+  <header>
+    <div class="header-container">
+  <a href="http://localhost:1313/lab-website/" class="logo">
+    <div>
+      <div style="font-size: 1.2rem; font-weight: 700; color: var(--primary-color);">SHANGHAI AI-FINANCE SCHOOL, ECNU</div>
+      <div style="font-size: 0.9rem; font-weight: 600; color: var(--text-color);">华东师范大学上海人工智能金融学院</div>
+    </div>
+  </a>
+  
+  <button class="mobile-menu-btn" id="mobile-menu-btn">☰</button>
+  
+  <nav>
+    <ul class="nav-menu" id="nav-menu">
+      
+      <li><a href="http://localhost:1313/lab-website/">首页</a></li>
+      
+      <li><a href="http://localhost:1313/lab-website/about/">关于我们</a></li>
+      
+      <li><a href="http://localhost:1313/lab-website/team/">研究团队</a></li>
+      
+      <li><a href="http://localhost:1313/lab-website/research/">研究项目</a></li>
+      
+      <li><a href="http://localhost:1313/lab-website/publications/">出版物</a></li>
+      
+      <li><a href="http://localhost:1313/lab-website/news/">新闻动态</a></li>
+      
+      <li><a href="http://localhost:1313/lab-website/opportunities/">机会</a></li>
+      
+      <li><a href="http://localhost:1313/lab-website/contact/">联系方式</a></li>
+      
+    </ul>
+  </nav>
+</div>
+
+<script>
+  
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const navMenu = document.getElementById('nav-menu');
+  
+  mobileMenuBtn.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+  
+  
+  const navLinks = document.querySelectorAll('.nav-menu a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+    });
+  });
+</script>
+
+  </header>
+  <main>
+    
+  <div class="container">
+    <section class="section">
+      <h1 style="text-align: center; margin-top: 60px; border-bottom: 2px solid var(--accent-color); padding-bottom: 15px; margin-bottom: 40px;">汪俊霖</h1>
+      <div style="max-width: 800px; margin: 0 auto; line-height: 1.8; font-size: 16px;">
+        <div style="display: flex; gap: 40px; align-items: flex-start;">
+  <div style="flex-shrink: 0; width: 200px; margin-left: -60px;">
+    <img src="http://localhost:1313/lab-website/images/wangjunlin.jpg" alt="汪俊霖" style="width: 200px; height: 200px; border-radius: 8px; object-fit: cover;">
+  </div>
+  <div style="flex: 1; max-width: 900px; margin-left: 0;">
+    <h2 style="margin-top: 40px; margin-bottom: 20px; border-bottom: 1px solid var(--medium-gray); padding-bottom: 10px;" style="color: #2c7ad6; margin-bottom: 20px; font-size: 1.5rem;">简介</h2>
+<p>汪俊霖研究员专注于金融大语言模型研发，创新并完善模型整体设计框架，实现大模型理解金融逻辑的方法与路径。针对“幻觉”问题，设计了可用于复杂金融分析中的模型和工作路径。在加入上海人工智能金融学院之前，汪俊霖曾任职于多家世界顶级私募股权，对冲基金，及投资银行，并于任职期间成功执行了总额约 300 亿元的投资及资产管理工作。熟悉杠杆收购、平台投资、夹层贷款及特殊机会投资等多种复杂的投资策略，并对这些策略的实际操作流程有深入了解，包括交易获取、研究分析、尽职调查、商业谈判、合同起草、境内外架构构建及银团融资等关键环节。</p>
+<h2 style="margin-top: 40px; margin-bottom: 20px; border-bottom: 1px solid var(--medium-gray); padding-bottom: 10px;" id="邮箱">邮箱</h2>
+<p><a href="mailto:jlwang@sem.ecnu.edu.cn">jlwang@sem.ecnu.edu.cn</a></p>
+<h2 style="margin-top: 40px; margin-bottom: 20px; border-bottom: 1px solid var(--medium-gray); padding-bottom: 10px;" id="个人主页">个人主页</h2>
+<p><a href="https://example.com/wangjunlin">个人主页链接</a></p>
+<h2 style="margin-top: 40px; margin-bottom: 20px; border-bottom: 1px solid var(--medium-gray); padding-bottom: 10px;" id="教育背景">教育背景</h2>
+<ul style="margin-top: 15px; margin-bottom: 25px; padding-left: 25px;">
+<li style="margin-bottom: 10px;">哥伦比亚大学商学院 会计与基本面分析硕士</li>
+</ul>
+<h2 style="margin-top: 40px; margin-bottom: 20px; border-bottom: 1px solid var(--medium-gray); padding-bottom: 10px;" id="研究兴趣">研究兴趣</h2>
+<ul style="margin-top: 15px; margin-bottom: 25px; padding-left: 25px;">
+<li style="margin-bottom: 10px;">
+<p>人工智能</p>
+</li>
+<li style="margin-bottom: 10px;">
+<p>金融</p>
+</li>
+<li style="margin-bottom: 10px;">
+<p>基本面分析</p>
+</li>
+<li style="margin-bottom: 10px;">
+<p>私募股权</p>
+</li>
+<li style="margin-bottom: 10px;">
+<p>对冲基金</p>
+</div>
+</li>
+</ul>
+</div>
+      </div>
+    </section>
+  </div>
+
+  </main>
+  <footer>
+    <footer style="background: var(--gradient-primary); padding: 20px 0;">
+  
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px; text-align: center;">
+    <p style="margin: 0; font-size: 14px; font-weight: 600; color: #ffffff;">Copyright © 2026 华东师范大学人工智能金融学院. All rights reserved.</p>
+  </div>
+</footer>
+
+  </footer>
+</body>
+</html>

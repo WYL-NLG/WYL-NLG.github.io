@@ -1,0 +1,51 @@
+baseURL = "https://wyl-nlg.github.io/lab-website/"
+locale = 'zh-cn'
+title = '实验室/课题组网站'
+theme = 'lab-theme'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menu]
+  [[menu.main]]
+    identifier = 'home'
+    name = '首页'
+    url = '/'
+    weight = 1
+  [[menu.main]]
+    identifier = 'about'
+    name = '关于我们'
+    url = '/about/'
+    weight = 2
+  [[menu.main]]
+    identifier = 'team'
+    name = '研究团队'
+    url = '/team/'
+    weight = 3
+  [[menu.main]]
+    identifier = 'research'
+    name = '研究项目'
+    url = '/research/'
+    weight = 4
+  [[menu.main]]
+    identifier = 'publications'
+    name = '出版物'
+    url = '/publications/'
+    weight = 5
+  [[menu.main]]
+    identifier = 'news'
+    name = '新闻动态'
+    url = '/news/'
+    weight = 6
+  [[menu.main]]
+    identifier = 'opportunities'
+    name = '机会'
+    url = '/opportunities/'
+    weight = 7
+  [[menu.main]]
+    identifier = 'contact'
+    name = '联系方式'
+    url = '/contact/'
+    weight = 8
