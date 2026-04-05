@@ -1,4 +1,4 @@
-baseURL = "https://wyl-nlg.github.io/"
+baseURL = "/"
 locale = 'zh-cn'
 title = '实验室/课题组网站'
 theme = 'lab-theme'
