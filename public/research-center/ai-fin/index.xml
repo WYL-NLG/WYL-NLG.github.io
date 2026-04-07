@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AI-Fin（人工智能金融）研究中心 on 实验室/课题组网站</title>
-    <link>http://localhost:1313/lab-website/research-center/ai-fin/</link>
+    <link>http://localhost:1313/research-center/ai-fin/</link>
     <description>Recent content in AI-Fin（人工智能金融）研究中心 on 实验室/课题组网站</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/lab-website/research-center/ai-fin/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/research-center/ai-fin/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
