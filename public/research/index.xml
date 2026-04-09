@@ -2,11 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>研究项目 on 实验室/课题组网站</title>
-    <link>http://localhost:1313/research/</link>
+    <link>//localhost:1313/research/</link>
     <description>Recent content in 研究项目 on 实验室/课题组网站</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/research/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 Nov 2025 10:00:00 +0800</lastBuildDate>
+    <atom:link href="//localhost:1313/research/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>全球金融科技中心发展指数（2025）正式发布</title>
+      <link>//localhost:1313/research/global-fintech-index-2025/</link>
+      <pubDate>Sat, 29 Nov 2025 10:00:00 +0800</pubDate>
+      <guid>//localhost:1313/research/global-fintech-index-2025/</guid>
+      <description>&lt;h2 id=&#34;项目简介&#34;&gt;项目简介&lt;/h2&gt;&#xA;&lt;p&gt;首个基于「硅基经济学」的全球AI金融中心指数&lt;/p&gt;&#xA;&lt;p&gt;全球 AI 金融中心指数(GAIFC)旨在衡量主要金融中心中，金融体系与算力(compute)、算法(algorithms)和数据(data)——视为继资本与劳动之后的新型关键生产要素——的融合程度。GAIFC 构建「硅基指标」体系，刻画城市在 AI 要素投入、金融业与 AI 产业互动以及由此产生的产出与价值，将分析视角从传统要素禀赋与金融规模，延伸至硅基生产力和智能金融发展潜力。&lt;/p&gt;&#xA;&lt;p&gt;GAIFC 的意义不只在于回答「谁正在成为智能金融中心」，更在于揭示「金融与 AI 如何相互成就」的机制。指数将评估视野从单向关注「AI 如何赋能金融」，拓展至对「金融如何培育 AI、AI 如何反哺金融」这一闭环的系统刻画，为不同城市在政策设计、资源配置和产业演化方面提供一个可比较、可跟踪的分析框架。&lt;/p&gt;&#xA;&lt;p&gt;本期覆盖北美、欧洲、东亚、中东与大洋洲的22 个城市，包括：旧金山-圣何塞、纽约、波士顿、洛杉矶、芝加哥、伦敦、巴黎、苏黎世-日内瓦、法兰克福、多伦多、北京、上海、深圳、广州、杭州、香港、新加坡、东京、首尔、悉尼、墨尔本、迪拜-阿布扎比。&lt;/p&gt;&#xA;&lt;h2 id=&#34;项目链接&#34;&gt;项目链接&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.gftci.org.cn/gaifc&#34;&gt;https://www.gftci.org.cn/gaifc&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

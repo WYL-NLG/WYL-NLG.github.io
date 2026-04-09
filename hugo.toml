@@ -30,21 +30,11 @@ theme = 'lab-theme'
     weight = 4
   [[menu.main]]
     identifier = 'publications'
-    name = '出版物'
+    name = '发表论文'
     url = '/publications/'
     weight = 5
-  [[menu.main]]
-    identifier = 'news'
-    name = '新闻动态'
-    url = '/news/'
-    weight = 6
   [[menu.main]]
     identifier = 'opportunities'
     name = '机会'
     url = '/opportunities/'
-    weight = 7
-  [[menu.main]]
-    identifier = 'contact'
-    name = '联系方式'
-    url = '/contact/'
-    weight = 8
+    weight = 6

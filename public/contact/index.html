@@ -15,7 +15,7 @@
 <body>
   <header>
     <div class="header-container">
-  <a href="http://localhost:1313/" class="logo">
+  <a href="//localhost:1313/" class="logo">
     <div>
       <div style="font-size: 1.2rem; font-weight: 700; color: var(--primary-color);">SHANGHAI AI-FINANCE SCHOOL, ECNU</div>
       <div style="font-size: 0.9rem; font-weight: 600; color: var(--text-color);">华东师范大学上海人工智能金融学院</div>
@@ -27,21 +27,17 @@
   <nav>
     <ul class="nav-menu" id="nav-menu">
       
-      <li><a href="http://localhost:1313/">首页</a></li>
+      <li><a href="//localhost:1313/">首页</a></li>
       
-      <li><a href="http://localhost:1313/about/">关于我们</a></li>
+      <li><a href="//localhost:1313/about/">关于我们</a></li>
       
-      <li><a href="http://localhost:1313/team/">研究团队</a></li>
+      <li><a href="//localhost:1313/team/">研究团队</a></li>
       
-      <li><a href="http://localhost:1313/research/">研究项目</a></li>
+      <li><a href="//localhost:1313/research/">研究项目</a></li>
       
-      <li><a href="http://localhost:1313/publications/">出版物</a></li>
+      <li><a href="//localhost:1313/publications/">发表论文</a></li>
       
-      <li><a href="http://localhost:1313/news/">新闻动态</a></li>
-      
-      <li><a href="http://localhost:1313/opportunities/">机会</a></li>
-      
-      <li><a href="http://localhost:1313/contact/">联系方式</a></li>
+      <li><a href="//localhost:1313/opportunities/">机会</a></li>
       
     </ul>
   </nav>
@@ -49,19 +45,24 @@
 
 <script>
   
-  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-  const navMenu = document.getElementById('nav-menu');
-  
-  mobileMenuBtn.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-  });
-  
-  
-  const navLinks = document.querySelectorAll('.nav-menu a');
-  navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      navMenu.classList.remove('active');
-    });
+  document.addEventListener('DOMContentLoaded', function() {
+    
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const navMenu = document.getElementById('nav-menu');
+    
+    if (mobileMenuBtn && navMenu) {
+      mobileMenuBtn.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+      });
+      
+      
+      const navLinks = document.querySelectorAll('.nav-menu a');
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          navMenu.classList.remove('active');
+        });
+      });
+    }
   });
 </script>
 
@@ -77,8 +78,6 @@
           
 <p>如您对上海人工智能金融学院的以下事宜需要咨询，请通过电子邮件与我们联系。</p>
 <p>智金院咨询：saifsadministration@sem.ecnu.edu.cn</p>
-<p>学位项目：汤傲成，actang@fem.ecnu.edu.cn</p>
-<p>政产合作：潘诚男，panchengnan@sem.ecnu.edu.cn</p>
 <p>联系地址：中国上海市普陀区中山北路3663号理科大楼A座5楼，200062</p>
 <p>微信公众号：上海人工智能金融学院SAIFS</p>
 
@@ -89,9 +88,17 @@
 
   </main>
   <footer>
-    <footer style="background: var(--gradient-primary); padding: 20px 0;">
+    <footer style="background: var(--gradient-primary); padding: 40px 0;">
   
-  <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px; text-align: center;">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px; text-align: center; margin-bottom: 30px;">
+    <h3 style="margin: 0 0 20px 0; font-size: 18px; font-weight: 700; color: #ffffff;">联系方式</h3>
+    <p style="margin: 0 0 10px 0; font-size: 14px; color: #ffffff;">智金院咨询：saifsadministration@sem.ecnu.edu.cn</p>
+    <p style="margin: 0 0 10px 0; font-size: 14px; color: #ffffff;">联系地址：中国上海市普陀区中山北路3663号理科大楼A座5楼，200062</p>
+    <p style="margin: 0; font-size: 14px; color: #ffffff;">微信公众号：上海人工智能金融学院SAIFS</p>
+  </div>
+  
+  
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px; text-align: center; border-top: 1px solid rgba(255, 255, 255, 0.2); padding-top: 20px;">
     <p style="margin: 0; font-size: 14px; font-weight: 600; color: #ffffff;">Copyright © 2026 华东师范大学人工智能金融学院. All rights reserved.</p>
   </div>
 </footer>

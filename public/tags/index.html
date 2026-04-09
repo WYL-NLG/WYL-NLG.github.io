@@ -15,7 +15,7 @@
 <body>
   <header>
     <div class="header-container">
-  <a href="http://localhost:1313/" class="logo">
+  <a href="//localhost:1313/" class="logo">
     <div>
       <div style="font-size: 1.2rem; font-weight: 700; color: var(--primary-color);">SHANGHAI AI-FINANCE SCHOOL, ECNU</div>
       <div style="font-size: 0.9rem; font-weight: 600; color: var(--text-color);">华东师范大学上海人工智能金融学院</div>
@@ -27,21 +27,17 @@
   <nav>
     <ul class="nav-menu" id="nav-menu">
       
-      <li><a href="http://localhost:1313/">首页</a></li>
+      <li><a href="//localhost:1313/">首页</a></li>
       
-      <li><a href="http://localhost:1313/about/">关于我们</a></li>
+      <li><a href="//localhost:1313/about/">关于我们</a></li>
       
-      <li><a href="http://localhost:1313/team/">研究团队</a></li>
+      <li><a href="//localhost:1313/team/">研究团队</a></li>
       
-      <li><a href="http://localhost:1313/research/">研究项目</a></li>
+      <li><a href="//localhost:1313/research/">研究项目</a></li>
       
-      <li><a href="http://localhost:1313/publications/">出版物</a></li>
+      <li><a href="//localhost:1313/publications/">发表论文</a></li>
       
-      <li><a href="http://localhost:1313/news/">新闻动态</a></li>
-      
-      <li><a href="http://localhost:1313/opportunities/">机会</a></li>
-      
-      <li><a href="http://localhost:1313/contact/">联系方式</a></li>
+      <li><a href="//localhost:1313/opportunities/">机会</a></li>
       
     </ul>
   </nav>
@@ -49,19 +45,24 @@
 
 <script>
   
-  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-  const navMenu = document.getElementById('nav-menu');
-  
-  mobileMenuBtn.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-  });
-  
-  
-  const navLinks = document.querySelectorAll('.nav-menu a');
-  navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      navMenu.classList.remove('active');
-    });
+  document.addEventListener('DOMContentLoaded', function() {
+    
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const navMenu = document.getElementById('nav-menu');
+    
+    if (mobileMenuBtn && navMenu) {
+      mobileMenuBtn.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+      });
+      
+      
+      const navLinks = document.querySelectorAll('.nav-menu a');
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          navMenu.classList.remove('active');
+        });
+      });
+    }
   });
 </script>
 
@@ -80,10 +81,35 @@
 
   </main>
   <footer>
-    <footer style="background: var(--gradient-primary); padding: 20px 0;">
+    <footer style="background: var(--gradient-primary); padding: 40px 0 30px;">
   
-  <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px; text-align: center;">
-    <p style="margin: 0; font-size: 14px; font-weight: 600; color: #ffffff;">Copyright © 2026 华东师范大学人工智能金融学院. All rights reserved.</p>
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 30px; margin-bottom: 25px;">
+    <h3 style="margin: 0 0 20px 0; font-size: 18px; font-weight: 700; color: #ffffff; text-align: center; letter-spacing: 1px;">联系方式</h3>
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 30px;">
+      
+      <div style="flex: 1; min-width: 300px;">
+        <div style="background: rgba(255, 255, 255, 0.1); border-radius: 10px; padding: 20px; backdrop-filter: blur(10px);">
+          <p style="margin: 0 0 10px 0; font-size: 14px; color: #ffffff; line-height: 1.4;">智金院咨询：<a href="mailto:saifsadministration@sem.ecnu.edu.cn" style="color: #ffffff; text-decoration: none; border-bottom: 1px solid rgba(255, 255, 255, 0.3); padding-bottom: 2px; transition: all 0.3s ease;">saifsadministration@sem.ecnu.edu.cn</a></p>
+          <p style="margin: 0; font-size: 14px; color: #ffffff; line-height: 1.4; white-space: nowrap;">联系地址：中国上海市普陀区中山北路3663号理科大楼A座5楼，200062</p>
+        </div>
+      </div>
+      
+      
+      <div style="flex: 1; min-width: 300px; display: flex; justify-content: center;">
+        <div style="background: rgba(255, 255, 255, 0.1); border-radius: 10px; padding: 20px; backdrop-filter: blur(10px); display: flex; align-items: center; gap: 20px;">
+          <div>
+            <p style="margin: 0 0 5px 0; font-size: 14px; color: #ffffff; font-weight: 500;">微信公众号</p>
+            <p style="margin: 0; font-size: 13px; color: rgba(255, 255, 255, 0.8);">上海人工智能金融学院SAIFS</p>
+          </div>
+          <img src="//localhost:1313/images/公众号.jpg" alt="微信公众号二维码" style="width: 120px; height: 120px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 30px; text-align: center; border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 20px;">
+    <p style="margin: 0; font-size: 13px; font-weight: 500; color: rgba(255, 255, 255, 0.8); letter-spacing: 0.5px;">Copyright © 2026 华东师范大学人工智能金融学院. All rights reserved.</p>
   </div>
 </footer>
 
