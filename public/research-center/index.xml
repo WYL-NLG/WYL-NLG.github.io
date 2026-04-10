@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>研究中心 on 实验室/课题组网站</title>
-    <link>//localhost:1313/research-center/</link>
+    <link>/research-center/</link>
     <description>Recent content in 研究中心 on 实验室/课题组网站</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="//localhost:1313/research-center/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/research-center/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -900,65 +900,23 @@
           {{ replaceRE "<h1.*?</h1>" "" .Content | replaceRE "&lt;p&gt;" "<p>" | replaceRE "&lt;/p&gt;" "</p>" | safeHTML }}
         </div>
       {{ else if eq .Section "opportunities" }}
-        <!-- 机会页面：TrustAGI风格 -->
+        <!-- 机会页面：标题式网页 -->
         <div style="max-width: 1000px; margin: 0 auto;">
           <h2 class="section-title" style="margin-top: 60px; margin-bottom: 40px; text-align: center;">机会</h2>
           
-          <!-- 博士后招聘 -->
-          <div class="opportunity-section" style="margin-bottom: 60px;">
-            <div class="opportunity-header" style="display: flex; justify-content: space-between; align-items: center; background: #1e40af; color: white; padding: 15px 20px; border-radius: var(--border-radius); margin-bottom: 20px; box-shadow: var(--shadow);">
-              <h3 style="margin: 0; font-size: 1.3rem; font-weight: 700; text-shadow: 0 1px 2px rgba(0,0,0,0.2);">博士后招聘</h3>
-            </div>
-            <div class="opportunity-content" style="background: var(--light-gray); padding: 30px; border-radius: var(--border-radius); box-shadow: var(--shadow);">
-              <p style="margin-bottom: 20px; font-size: 1.1rem;">我们诚邀优秀的博士后加入我们的研究团队，共同开展人工智能金融领域的前沿研究。</p>
-              
-              <h4 style="margin-bottom: 15px; font-size: 1.1rem; color: var(--primary-color);">要求：</h4>
-              
-              <h4 style="margin-bottom: 15px; font-size: 1.1rem; color: var(--primary-color);">待遇：</h4>
-            </div>
+          <div class="grid" style="gap: 30px;">
+            {{ if .Pages }}
+              {{ range sort .Pages "Date" "desc" }}
+              <div class="card" style="padding: 30px; text-align: center; position: relative; overflow: hidden; border: 1px solid var(--medium-gray);">
+                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at 50% 50%, rgba(30, 64, 175, 0.05) 0%, transparent 70%); z-index: 0;"></div>
+                <h3 style="font-size: 1.4rem; margin-bottom: 20px; position: relative; z-index: 1; font-family: 'Playfair Display', serif;"><a href="{{ .RelPermalink }}" style="color: var(--primary-color);">{{ .LinkTitle }}</a></h3>
+                <a href="{{ .RelPermalink }}" class="btn" style="position: relative; z-index: 1;">查看详情</a>
+              </div>
+              {{ end }}
+            {{ else }}
+              <p style="text-align: center; color: var(--text-light); padding: 40px 0; grid-column: 1 / -1;">暂无机会</p>
+            {{ end }}
           </div>
-          
-          <!-- 研究助理招聘 -->
-          <div class="opportunity-section" style="margin-bottom: 60px;">
-            <div class="opportunity-header" style="display: flex; justify-content: space-between; align-items: center; background: #1e40af; color: white; padding: 15px 20px; border-radius: var(--border-radius); margin-bottom: 20px; box-shadow: var(--shadow);">
-              <h3 style="margin: 0; font-size: 1.3rem; font-weight: 700; text-shadow: 0 1px 2px rgba(0,0,0,0.2);">研究助理招聘</h3>
-            </div>
-            <div class="opportunity-content" style="background: var(--light-gray); padding: 30px; border-radius: var(--border-radius); box-shadow: var(--shadow);">
-              <p style="margin-bottom: 20px; font-size: 1.1rem;">我们欢迎对人工智能金融领域感兴趣的研究助理加入我们的团队。</p>
-              
-              <h4 style="margin-bottom: 15px; font-size: 1.1rem; color: var(--primary-color);">要求：</h4>
-              
-              <h4 style="margin-bottom: 15px; font-size: 1.1rem; color: var(--primary-color);">待遇：</h4>
-            </div>
-          </div>
-          
-          <!-- 博士/硕士招生 -->
-          <div class="opportunity-section" style="margin-bottom: 60px;">
-            <div class="opportunity-header" style="display: flex; justify-content: space-between; align-items: center; background: #1e40af; color: white; padding: 15px 20px; border-radius: var(--border-radius); margin-bottom: 20px; box-shadow: var(--shadow);">
-              <h3 style="margin: 0; font-size: 1.3rem; font-weight: 700; text-shadow: 0 1px 2px rgba(0,0,0,0.2);">博士/硕士招生</h3>
-            </div>
-            <div class="opportunity-content" style="background: var(--light-gray); padding: 30px; border-radius: var(--border-radius); box-shadow: var(--shadow);">
-              <p style="margin-bottom: 20px; font-size: 1.1rem;">我们招收对人工智能金融领域感兴趣的博士和硕士研究生，提供良好的学术环境和研究条件。</p>
-              
-              <h4 style="margin-bottom: 15px; font-size: 1.1rem; color: var(--primary-color);">研究方向：</h4>
-              
-              <h4 style="margin-bottom: 15px; font-size: 1.1rem; color: var(--primary-color);">申请要求：</h4>
-            </div>
-          </div>
-          
-          <!-- 学术合作 -->
-          <div class="opportunity-section" style="margin-bottom: 60px;">
-            <div class="opportunity-header" style="display: flex; justify-content: space-between; align-items: center; background: #1e40af; color: white; padding: 15px 20px; border-radius: var(--border-radius); margin-bottom: 20px; box-shadow: var(--shadow);">
-              <h3 style="margin: 0; font-size: 1.3rem; font-weight: 700; text-shadow: 0 1px 2px rgba(0,0,0,0.2);">学术合作</h3>
-            </div>
-            <div class="opportunity-content" style="background: var(--light-gray); padding: 30px; border-radius: var(--border-radius); box-shadow: var(--shadow);">
-              <p style="margin-bottom: 20px; font-size: 1.1rem;">我们欢迎与国内外高校、研究机构开展学术合作，包括联合申请项目、共同发表论文、举办学术研讨会等。</p>
-              
-              <h4 style="margin-bottom: 15px; font-size: 1.1rem; color: var(--primary-color);">合作形式：</h4>
-            </div>
-          </div>
-          
-
         </div>
       {{ else }}
         <!-- 其他页面：网格布局 -->

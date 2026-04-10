@@ -2,11 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>机会 on 实验室/课题组网站</title>
-    <link>//localhost:1313/opportunities/</link>
+    <link>/opportunities/</link>
     <description>Recent content in 机会 on 实验室/课题组网站</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="//localhost:1313/opportunities/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 29 Mar 2026 16:00:00 +0800</lastBuildDate>
+    <atom:link href="/opportunities/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>上海人工智能金融学院助理教授招聘公告</title>
+      <link>/opportunities/assistant-professor/</link>
+      <pubDate>Sun, 29 Mar 2026 16:00:00 +0800</pubDate>
+      <guid>/opportunities/assistant-professor/</guid>
+      <description>&lt;p&gt;为进一步推进人工智能与金融深度融合,建设国际一流的教学科研团队,上海人工智能金融学院现面向海内外公开招聘助理教授若干名,诚邀青年学者加盟。&lt;/p&gt;&#xA;&lt;h2 id=&#34;一岗位职责&#34;&gt;一、岗位职责&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-教学工作&#34;&gt;1. 教学工作&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;承担学院本科生及研究生相关课程的教学任务&lt;/li&gt;&#xA;&lt;li&gt;参与课程体系建设与教学内容创新,推动交叉学科高质量人才培养&lt;/li&gt;&#xA;&lt;li&gt;指导本科生、硕士生及博士生的学习与科研工作&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;2-科研工作&#34;&gt;2. 科研工作&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;围绕人工智能与金融交叉领域开展前沿学术研究,形成具有国际影响力的研究成果&lt;/li&gt;&#xA;&lt;li&gt;以第一作者或通讯作者身份在顶级学术会议或高水平期刊发表论文&lt;/li&gt;&#xA;&lt;li&gt;积极申报并承担国家级，省部级及其他科研项目&lt;/li&gt;&#xA;&lt;li&gt;参与学院重点科研平台和科研团队建设&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;3-学科与平台建设&#34;&gt;3. 学科与平台建设&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;参与学院学科发展规划、科研方向凝练及实验室建设&lt;/li&gt;&#xA;&lt;li&gt;推动人工智能技术在金融领域的理论创新与应用研究&lt;/li&gt;&#xA;&lt;li&gt;与国内外高校、科研机构及产业界建立并维护学术合作关系&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;4-学院公共事务&#34;&gt;4. 学院公共事务&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;参与学院的学术活动、学术服务及相关行政与公共事务&lt;/li&gt;&#xA;&lt;li&gt;协助完成学院安排的其他教学与科研相关工作&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;二任职要求&#34;&gt;二、任职要求&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;已获得或即将获得计算机科学、人工智能学科博士学位&lt;/li&gt;&#xA;&lt;li&gt;在大模型安全、大模型幻觉、智能体、Graph RAG、多模态、时间序列等相关领域具有深入研究，发表过高水平学术成果&lt;/li&gt;&#xA;&lt;li&gt;具备独立开展科研工作的能力&lt;/li&gt;&#xA;&lt;li&gt;具有良好的职业道德、团队合作精神和学术规范意识&lt;/li&gt;&#xA;&lt;li&gt;在顶级AI 会议或期刊发表多篇论文者优先&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;三薪酬与支持&#34;&gt;三、薪酬与支持&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;提供具有国际竞争力的薪酬待遇&lt;/li&gt;&#xA;&lt;li&gt;提供完善的职业发展支持与良好的学术环境&lt;/li&gt;&#xA;&lt;li&gt;提供完善的科研启动支持，依托华东师范大学平台优势，支持并协助入选者申报国家海外高层次青年人才项目（海外优青）、上海市&amp;quot;白玉兰&amp;quot;系列人才计划等各类高水平人才项目&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>上海人工智能金融学院博士后招聘公告</title>
+      <link>/opportunities/postdoctoral/</link>
+      <pubDate>Sun, 29 Mar 2026 16:00:00 +0800</pubDate>
+      <guid>/opportunities/postdoctoral/</guid>
+      <description>&lt;p&gt;为进一步推进人工智能与金融深度融合,建设国际一流的教学科研团队,上海人工智能金融学院现面向海内外公开招聘博士后若干名,诚邀优秀青年人才加盟，共同探索前沿领域。&lt;/p&gt;&#xA;&lt;h2 id=&#34;一岗位职责&#34;&gt;一、岗位职责&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-科研工作&#34;&gt;1. 科研工作&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;围绕人工智能与金融交叉领域（包括但不限于大模型安全、大模型幻觉、智能体、Graph RAG、多模态、时间序列等）开展前沿学术研究，产出具有国际影响力的研究成果&lt;/li&gt;&#xA;&lt;li&gt;以主要作者身份在顶级学术会议或高水平期刊发表论文&lt;/li&gt;&#xA;&lt;li&gt;积极申报并承担国家博士后科学基金、国家自然科学基金青年项目、上海市&amp;quot;超级博士后&amp;quot;等科研项目&lt;/li&gt;&#xA;&lt;li&gt;参与学院重点科研平台和团队建设，协助指导研究生&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;2-学术合作与交流&#34;&gt;2. 学术合作与交流&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;参与组织高水平学术活动，与国内外顶尖高校、科研机构及产业界建立并维护良好的学术合作关系&lt;/li&gt;&#xA;&lt;li&gt;协助学院完成安排的其他科研相关工作&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;3-学院公共事务&#34;&gt;3. 学院公共事务&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;参与学院的学术活动、学术服务及相关行政与公共事务&lt;/li&gt;&#xA;&lt;li&gt;协助完成学院安排的其他教学与科研相关工作&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;二任职要求&#34;&gt;二、任职要求&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;已获得或即将获得计算机科学、人工智能或相关领域的博士学位，年龄一般不超过35周岁&lt;/li&gt;&#xA;&lt;li&gt;在相关研究方向上取得了优秀的学术成果，具备独立开展高水平科研工作的能力&lt;/li&gt;&#xA;&lt;li&gt;具备良好的职业道德、团队合作精神和严谨的学术规范意识&lt;/li&gt;&#xA;&lt;li&gt;在顶级AI会议或期刊上以第一作者身份发表过多篇论文者优先&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;三薪酬与支持&#34;&gt;三、薪酬与支持&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;提供具有国际竞争力的薪酬待遇及福利保障&lt;/li&gt;&#xA;&lt;li&gt;提供充足的科研启动经费和一流的科研环境，支持依托华东师范大学的平台优势申报国家&amp;quot;博新计划&amp;quot;、上海市&amp;quot;超级博士后&amp;quot;激励计划等人才项目&lt;/li&gt;&#xA;&lt;li&gt;提供清晰的职业发展路径，优秀博士后出站后可优先申请学院助理教授等职位&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>博士实习生</title>
+      <link>/opportunities/phd-intern/</link>
+      <pubDate>Sun, 29 Mar 2026 16:00:00 +0800</pubDate>
+      <guid>/opportunities/phd-intern/</guid>
+      <description>&lt;p&gt;为进一步推进人工智能与金融深度融合,建设国际一流的教学科研团队,上海人工智能金融学院现面向海内外公开招聘博士实习生若干名,诚邀优秀青年人才加盟，共同探索前沿领域。&lt;/p&gt;&#xA;&lt;h2 id=&#34;一岗位职责&#34;&gt;一、岗位职责&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-科研工作&#34;&gt;1. 科研工作&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;在导师指导下，深度参与人工智能与金融交叉领域的前沿科研项目&lt;/li&gt;&#xA;&lt;li&gt;负责数据处理、模型设计、算法实现与实验验证等具体研究工作&lt;/li&gt;&#xA;&lt;li&gt;整理研究成果，撰写高质量学术论文&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;2-团队协作&#34;&gt;2. 团队协作&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;参与团队内部的学术讨论和技术分享会&lt;/li&gt;&#xA;&lt;li&gt;协助导师完成部分项目管理和沟通工作&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;二任职要求&#34;&gt;二、任职要求&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;海内外知名高校计算机科学、人工智能或相关专业的在读博士生&lt;/li&gt;&#xA;&lt;li&gt;在以下一个或多个领域有深入研究或项目经验：大模型安全、大模型幻觉、智能体、Graph RAG、多模态、时间序列&lt;/li&gt;&#xA;&lt;li&gt;具备扎实的编程能力和算法基础，熟练掌握至少一种深度学习框架&lt;/li&gt;&#xA;&lt;li&gt;具备良好的沟通能力、团队合作精神和强烈的求知欲&lt;/li&gt;&#xA;&lt;li&gt;有高水平学术论文发表者优先，可保证3个月以上全职实习者优先&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;三待遇与收获&#34;&gt;三、待遇与收获&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;提供有竞争力的实习津贴和福利补贴&lt;/li&gt;&#xA;&lt;li&gt;获得与学术界和工业界顶尖学者共同研究的机会，积累宝贵的前沿项目经验&lt;/li&gt;&#xA;&lt;li&gt;表现优异者可获得留用机会或强有力的推荐信&lt;/li&gt;&#xA;&lt;li&gt;支持以实习期间的研究成果发表高水平学术论文&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>博士招生</title>
+      <link>/opportunities/phd/</link>
+      <pubDate>Sun, 29 Mar 2026 16:00:00 +0800</pubDate>
+      <guid>/opportunities/phd/</guid>
+      <description>&lt;h2 id=&#34;招生信息&#34;&gt;招生信息&lt;/h2&gt;&#xA;&lt;p&gt;我们招收对人工智能金融领域感兴趣的博士研究生，提供良好的学术环境和研究条件。&lt;/p&gt;&#xA;&lt;h2 id=&#34;研究方向&#34;&gt;研究方向&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;人工智能金融&lt;/li&gt;&#xA;&lt;li&gt;金融科技&lt;/li&gt;&#xA;&lt;li&gt;智能投资与风险管理&lt;/li&gt;&#xA;&lt;li&gt;量化金融&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;申请要求&#34;&gt;申请要求&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;拥有硕士学位或即将获得硕士学位&lt;/li&gt;&#xA;&lt;li&gt;具有扎实的数学和计算机基础&lt;/li&gt;&#xA;&lt;li&gt;对金融科技研究有浓厚兴趣&lt;/li&gt;&#xA;&lt;li&gt;具备良好的英语读写能力&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;培养特色&#34;&gt;培养特色&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;交叉学科培养&lt;/li&gt;&#xA;&lt;li&gt;国际化的学术交流&lt;/li&gt;&#xA;&lt;li&gt;产教融合的实践机会&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>学术合作</title>
+      <link>/opportunities/collaboration/</link>
+      <pubDate>Sun, 29 Mar 2026 16:00:00 +0800</pubDate>
+      <guid>/opportunities/collaboration/</guid>
+      <description>&lt;h2 id=&#34;合作信息&#34;&gt;合作信息&lt;/h2&gt;&#xA;&lt;p&gt;我们欢迎与国内外高校、研究机构开展学术合作，包括联合申请项目、共同发表论文、举办学术研讨会等。&lt;/p&gt;&#xA;&lt;h2 id=&#34;合作形式&#34;&gt;合作形式&lt;/h2&gt;&#xA;&lt;h3 id=&#34;联合研究项目&#34;&gt;联合研究项目&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;共同申请国家级、省部级科研项目&lt;/li&gt;&#xA;&lt;li&gt;开展跨学科合作研究&lt;/li&gt;&#xA;&lt;li&gt;企业技术合作&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;学术交流&#34;&gt;学术交流&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;联合举办学术研讨会和讲座&lt;/li&gt;&#xA;&lt;li&gt;学者互访和交流计划&lt;/li&gt;&#xA;&lt;li&gt;研究生联合培养&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;成果转化&#34;&gt;成果转化&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;技术转移与合作&lt;/li&gt;&#xA;&lt;li&gt;产学研用结合&lt;/li&gt;&#xA;&lt;li&gt;实习就业对接&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;联系方式&#34;&gt;联系方式&lt;/h2&gt;&#xA;&lt;p&gt;如有意向合作，请联系我们：saifsadministration@sem.ecnu.edu.cn&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>硕士招生</title>
+      <link>/opportunities/master/</link>
+      <pubDate>Sun, 29 Mar 2026 16:00:00 +0800</pubDate>
+      <guid>/opportunities/master/</guid>
+      <description>&lt;h2 id=&#34;招生信息&#34;&gt;招生信息&lt;/h2&gt;&#xA;&lt;p&gt;我们招收对人工智能金融领域感兴趣的硕士研究生，提供良好的学术环境和研究条件。&lt;/p&gt;&#xA;&lt;h2 id=&#34;研究方向&#34;&gt;研究方向&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;人工智能与金融交叉领域&lt;/li&gt;&#xA;&lt;li&gt;金融数据分析&lt;/li&gt;&#xA;&lt;li&gt;智能投顾系统&lt;/li&gt;&#xA;&lt;li&gt;金融风险管理&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;申请要求&#34;&gt;申请要求&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;拥有或即将获得本科学位&lt;/li&gt;&#xA;&lt;li&gt;具有良好的数学、统计或计算机基础&lt;/li&gt;&#xA;&lt;li&gt;对金融科技有浓厚兴趣&lt;/li&gt;&#xA;&lt;li&gt;具备良好的学习能力和团队协作精神&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;培养特色&#34;&gt;培养特色&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;理论与实践相结合&lt;/li&gt;&#xA;&lt;li&gt;企业实习机会&lt;/li&gt;&#xA;&lt;li&gt;优秀学生优先推荐读博&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
   </channel>
 </rss>

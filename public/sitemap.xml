@@ -2,105 +2,123 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/team/huzhongbo/</loc>
+    <loc>/team/huzhongbo/</loc>
     <lastmod>2026-03-31T16:00:00+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/team/shaoyilei/</loc>
+    <loc>/team/shaoyilei/</loc>
     <lastmod>2026-03-29T16:00:00+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/team/liuyang/</loc>
+    <loc>/team/liuyang/</loc>
     <lastmod>2026-03-31T16:00:00+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/team/wenqingsong/</loc>
+    <loc>/team/wenqingsong/</loc>
     <lastmod>2026-03-30T16:00:00+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/team/luwenyi/</loc>
+    <loc>/team/luwenyi/</loc>
     <lastmod>2026-03-31T16:00:00+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/team/wangyuanlong/</loc>
+    <loc>/team/wangyuanlong/</loc>
     <lastmod>2026-03-31T16:00:00+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/opportunities/</loc>
+    <loc>/opportunities/</loc>
     <lastmod>2026-04-04T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/team/wuzonghan/</loc>
+    <loc>/team/wuzonghan/</loc>
     <lastmod>2026-03-31T16:00:00+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/team/tangaozheng/</loc>
+    <loc>/team/tangaozheng/</loc>
     <lastmod>2026-03-31T16:00:00+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/team/wangjunlin/</loc>
+    <loc>/team/wangjunlin/</loc>
     <lastmod>2026-03-31T16:00:00+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/team/wennanfu/</loc>
+    <loc>/team/wennanfu/</loc>
     <lastmod>2026-03-31T16:00:00+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/team/haomuqing/</loc>
+    <loc>/team/haomuqing/</loc>
     <lastmod>2026-03-31T16:00:00+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/research-center/ai-fin/</loc>
+    <loc>/research-center/ai-fin/</loc>
     <lastmod>2026-03-31T11:00:00+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/research-center/ai-ppe/</loc>
+    <loc>/research-center/ai-ppe/</loc>
     <lastmod>2026-03-31T11:00:00+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/research-center/</loc>
+    <loc>/research-center/</loc>
     <lastmod>2026-03-31T11:00:00+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/direction/</loc>
+    <loc>/direction/</loc>
     <lastmod>2026-03-31T10:00:00+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/about/school/</loc>
+    <loc>/about/school/</loc>
     <lastmod>2026-03-30T23:10:00+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/</loc>
+    <loc>/</loc>
     <lastmod>2026-03-29T16:00:00+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/publications/</loc>
+    <loc>/opportunities/assistant-professor/</loc>
     <lastmod>2026-03-29T16:00:00+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/about/</loc>
+    <loc>/opportunities/postdoctoral/</loc>
     <lastmod>2026-03-29T16:00:00+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/team/</loc>
+    <loc>/publications/</loc>
     <lastmod>2026-03-29T16:00:00+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/research/</loc>
+    <loc>/opportunities/phd-intern/</loc>
     <lastmod>2026-03-29T16:00:00+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/about/lab/</loc>
+    <loc>/opportunities/phd/</loc>
     <lastmod>2026-03-29T16:00:00+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/research/global-fintech-index-2025/</loc>
+    <loc>/opportunities/collaboration/</loc>
+    <lastmod>2026-03-29T16:00:00+08:00</lastmod>
+  </url><url>
+    <loc>/about/</loc>
+    <lastmod>2026-03-29T16:00:00+08:00</lastmod>
+  </url><url>
+    <loc>/team/</loc>
+    <lastmod>2026-03-29T16:00:00+08:00</lastmod>
+  </url><url>
+    <loc>/research/</loc>
+    <lastmod>2026-03-29T16:00:00+08:00</lastmod>
+  </url><url>
+    <loc>/opportunities/master/</loc>
+    <lastmod>2026-03-29T16:00:00+08:00</lastmod>
+  </url><url>
+    <loc>/about/lab/</loc>
+    <lastmod>2026-03-29T16:00:00+08:00</lastmod>
+  </url><url>
+    <loc>/research/global-fintech-index-2025/</loc>
     <lastmod>2025-11-29T10:00:00+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/publications/ai-fundamental-analysis-2025/</loc>
+    <loc>/publications/ai-fundamental-analysis-2025/</loc>
     <lastmod>2025-05-22T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/blue/</loc>
+    <loc>/tags/blue/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/green/</loc>
+    <loc>/tags/green/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/post-3/</loc>
+    <loc>/posts/post-3/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/red/</loc>
+    <loc>/tags/red/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/post-2/</loc>
+    <loc>/posts/post-2/</loc>
     <lastmod>2023-02-15T10:00:00-07:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/post-1/</loc>
+    <loc>/posts/post-1/</loc>
     <lastmod>2023-01-15T09:00:00-07:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/</loc>
+    <loc>/posts/</loc>
     <lastmod>2023-01-01T08:30:00-07:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/categories/</loc>
+    <loc>/categories/</loc>
   </url>
 </urlset>
